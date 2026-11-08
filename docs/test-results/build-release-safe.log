@@ -1,0 +1,36 @@
+Cobra TigerStyle: 12 files, 234 assertions, 113 functions; positive and negative checks passed
+Build Summary: 17/17 steps succeeded; 6/6 tests passed
+install success
++- install SQLhevi success
+|  +- compile exe SQLhevi ReleaseSafe x86_64-linux-musl cached 4s MaxRSS:42M
+|     +- WriteFile cached
+|     +- compile lib sqlite3 ReleaseSafe x86_64-linux-musl cached 1ms MaxRSS:40M
+|     +- compile lib sqlite3 ReleaseSafe x86_64-linux-musl (reused)
+|     +- options cached
+|     +- options cached
++- install SQLhevi-sim success
+|  +- compile exe SQLhevi-sim ReleaseSafe x86_64-linux-musl success 23s MaxRSS:895M
+|     +- WriteFile (reused)
+|     +- compile lib sqlite3 ReleaseSafe x86_64-linux-musl (reused)
+|     +- compile lib sqlite3 ReleaseSafe x86_64-linux-musl (reused)
+|     +- options (reused)
+|     +- options (reused)
++- install SQLhevi-test-cluster cached
+   +- compile exe SQLhevi-test-cluster ReleaseSafe x86_64-linux-musl cached 4ms MaxRSS:42M
+      +- WriteFile (reused)
+      +- compile lib sqlite3 ReleaseSafe x86_64-linux-musl (reused)
+      +- compile lib sqlite3 ReleaseSafe x86_64-linux-musl (reused)
+      +- options (reused)
+      +- options (reused)
+check success
++- run test 6 pass (6 total) 312ms MaxRSS:29M
+|  +- compile test ReleaseSafe x86_64-linux-musl cached 5ms MaxRSS:42M
+|     +- WriteFile (reused)
+|     +- compile lib sqlite3 ReleaseSafe x86_64-linux-musl (reused)
+|     +- compile lib sqlite3 ReleaseSafe x86_64-linux-musl (reused)
++- zig fmt --check success
++- run exe tigerstyle success 29ms
+   +- compile exe tigerstyle ReleaseSafe x86_64-linux-musl cached 5ms MaxRSS:41M
+
+:460M
+

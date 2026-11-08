@@ -1,0 +1,150 @@
+GUEST: loading /lib/virtio_blk.ko
+GUEST: loading /lib/crc16.ko
+GUEST: loading /lib/mbcache.ko
+GUEST: loading /lib/jbd2.ko
+GUEST: loading /lib/ext4.ko
+GUEST: ext4 mounted; loopback ready; running native io_uring tests
+SQLhevi replica=0 cluster=0 listening; io_uring storage
+SQLhevi replica=2 cluster=0 listening; io_uring storage
+SQLhevi replica=1 cluster=0 listening; io_uring storage
+SQLhevi replica=0 cluster=0 listening; io_uring storage
+[33m[1mwarning[0m[2m[1m(replica): [0m2: tick_normal_heartbeat_fault: heartbeat lost (interval=469.093ms delay=1.412s)
+[33m[1mwarning[0m[2m[1m(replica): [0m1: tick_normal_heartbeat_fault: tick delayed (interval=479.175ms delay=2.09s)
+[33m[1mwarning[0m[2m[1m(message_bus): [0m1: on_send: to=.{ .client_likely = 153193975785798644986602142439454218915 } error.BrokenPipe
+[33m[1mwarning[0m[2m[1m(replica): [0m2: tick_normal_heartbeat_fault: heartbeat lost (interval=631.183ms delay=2.073s)
+SCRATCH TEST: injecting kill_read after 48 real io_uring writes
+[33m[1mwarning[0m[2m[1m(replica): [0m2: tick_normal_heartbeat_fault: heartbeat lost (interval=287.275ms delay=870.394ms)
+[33m[1mwarning[0m[2m[1m(journal): [0m0: recover_slot: recovered slot=0003 label=@G decision=fix operation=.register op=3 view=1
+[33m[1mwarning[0m[2m[1m(journal): [0m0: recover_slot: recovered slot=0004 label=@G decision=fix operation=@enumFromInt(128) op=4 view=1
+SQLhevi replica=0 cluster=0 listening; io_uring storage
+[33m[1mwarning[0m[2m[1m(replica): [0m2: tick_normal_heartbeat_fault: heartbeat lost (interval=403.899ms delay=1.215s)
+[33m[1mwarning[0m[2m[1m(replica): [0m1: tick_normal_heartbeat_fault: tick delayed (interval=310.712ms delay=2.46s)
+[33m[1mwarning[0m[2m[1m(message_bus): [0m1: on_send: to=.{ .client_likely = 66980607952691190495649723430721270858 } error.BrokenPipe
+[33m[1mwarning[0m[2m[1m(replica): [0m2: tick_normal_heartbeat_fault: heartbeat lost (interval=526.599ms delay=2.124s)
+[33m[1mwarning[0m[2m[1m(replica): [0m0n: on_messages: suspending command=prepare op=8 view=1 checksum=890a4f2679be3f2d2bc4c4dd12a664c5
+SCRATCH TEST: injecting corrupt_write after 48 real io_uring writes
+[31m[1merror[0m[2m[1m: [0mlocal scratch failure: ScratchCorrupt; stopping replica before applying SQL
+[33m[1mwarning[0m[2m[1m(replica): [0m2: tick_normal_heartbeat_fault: heartbeat lost (interval=321.528ms delay=972.555ms)
+[33m[1mwarning[0m[2m[1m(journal): [0m0: recover_slot: recovered slot=0007 label=@G decision=fix operation=.register op=7 view=1
+[33m[1mwarning[0m[2m[1m(journal): [0m0: recover_slot: recovered slot=0008 label=@G decision=fix operation=@enumFromInt(128) op=8 view=1
+SQLhevi replica=0 cluster=0 listening; io_uring storage
+[33m[1mwarning[0m[2m[1m(replica): [0m2: tick_normal_heartbeat_fault: heartbeat lost (interval=451.734ms delay=1.357s)
+[33m[1mwarning[0m[2m[1m(replica): [0m1: tick_normal_heartbeat_fault: tick delayed (interval=322.019ms delay=2.631s)
+[33m[1mwarning[0m[2m[1m(replica): [0m1N: on_messages: message count=9 suspended=0
+[33m[1mwarning[0m[2m[1m(replica): [0m2: tick_normal_heartbeat_fault: heartbeat lost (interval=554.906ms delay=2.382s)
+SCRATCH TEST: injecting kill_write after 48 real io_uring writes
+SQLhevi replica=0 cluster=0 listening; io_uring storage
+[33m[1mwarning[0m[2m[1m(replica): [0m2: tick_normal_heartbeat_fault: heartbeat lost (interval=261.159ms delay=788.993ms)
+[33m[1mwarning[0m[2m[1m(replica): [0m2: tick_normal_heartbeat_fault: heartbeat lost (interval=366.726ms delay=1.1s)
+[33m[1mwarning[0m[2m[1m(replica): [0m2: tick_normal_heartbeat_fault: heartbeat lost (interval=513.432ms delay=1.546s)
+[33m[1mwarning[0m[2m[1m(replica): [0m2: tick_normal_heartbeat_fault: heartbeat lost (interval=720.011ms delay=2.164s)
+[33m[1mwarning[0m[2m[1m(replica): [0m0: tick_normal_heartbeat_fault: heartbeat lost (interval=2s delay=6.006s)
+[33m[1mwarning[0m[2m[1m(replica): [0m0n: on_messages: message count=13 suspended=0
+[33m[1mwarning[0m[2m[1m(replica): [0m0n: on_messages: suspending command=prepare op=10 view=1 checksum=d517e58b53482af7aebb20f029fc9de1
+[33m[1mwarning[0m[2m[1m(replica): [0m0: tick_normal_heartbeat_fault: heartbeat lost (interval=984.153ms delay=2.956s)
+[33m[1mwarning[0m[2m[1m(replica): [0m0: tick_normal_heartbeat_fault: heartbeat lost (interval=1.187s delay=3.568s)
+[33m[1mwarning[0m[2m[1m(replica): [0m0n: on_repair_sync_timeout: request sync; lagging behind cluster (op_head=16 commit_min=10 commit_max=15 commit_stage=idle)
+[33m[1mwarning[0m[2m[1m(replica): [0m1: tick_normal_heartbeat_fault: tick delayed (interval=293.017ms delay=19.601s)
+[33m[1mwarning[0m[2m[1m(clock): [0m1: synchronization failed, no agreement (sources=2 samples=2)
+[33m[1mwarning[0m[2m[1m(replica): [0m1n: on_prepare: not replicating op=16 commit_min=16 present=true
+[33m[1mwarning[0m[2m[1m(replica): [0m1n: on_prepare: not replicating op=16 commit_min=16 present=true
+[33m[1mwarning[0m[2m[1m(replica): [0m1n: on_prepare: not replicating op=16 commit_min=16 present=true
+[33m[1mwarning[0m[2m[1m(replica): [0m1n: on_prepare: not replicating op=16 commit_min=16 present=true
+[33m[1mwarning[0m[2m[1m(replica): [0m1n: on_prepare: not replicating op=16 commit_min=16 present=true
+[33m[1mwarning[0m[2m[1m(replica): [0m1n: on_prepare: not replicating op=16 commit_min=16 present=true
+[33m[1mwarning[0m[2m[1m(replica): [0m1n: on_prepare: not replicating op=16 commit_min=16 present=true
+[33m[1mwarning[0m[2m[1m(replica): [0m1n: on_prepare: not replicating op=16 commit_min=16 present=true
+[33m[1mwarning[0m[2m[1m(replica): [0m1n: on_messages: message count=39 suspended=0
+[33m[1mwarning[0m[2m[1m(replica): [0m1n: on_messages: message count=11 suspended=0
+[33m[1mwarning[0m[2m[1m(replica): [0m1n: on_messages: message count=71 suspended=0
+[33m[1mwarning[0m[2m[1m(message_bus): [0m1: on_send: to=.{ .client_likely = 73833002739697723758692176370404193670 } error.BrokenPipe
+[31m[1merror[0m[2m[1m: [0mWouldBlock
+SQLhevi replica=2 cluster=0 listening; io_uring storage
+SQLhevi replica=0 cluster=0 listening; io_uring storage
+[33m[1mwarning[0m[2m[1m(message_bus): [0m0: on_connect: error to=1 error.ConnectionRefused
+[33m[1mwarning[0m[2m[1m(message_bus): [0m0: on_connect: error to=1 error.ConnectionRefused
+[33m[1mwarning[0m[2m[1m(message_bus): [0m0: on_connect: error to=1 error.ConnectionRefused
+[33m[1mwarning[0m[2m[1m(message_bus): [0m0: on_connect: error to=1 error.ConnectionRefused
+[33m[1mwarning[0m[2m[1m(message_bus): [0m0: on_connect: error to=1 error.ConnectionRefused
+[33m[1mwarning[0m[2m[1m(replica): [0m0V: on_messages: message count=9 suspended=0
+[33m[1mwarning[0m[2m[1m(message_bus): [0m0: on_connect: error to=1 error.ConnectionRefused
+[33m[1mwarning[0m[2m[1m(replica): [0m0N: on_request: dropping (clock not synchronized)
+[33m[1mwarning[0m[2m[1m(message_bus): [0m0: on_connect: error to=1 error.ConnectionRefused
+[33m[1mwarning[0m[2m[1m(message_bus): [0m0: on_connect: error to=1 error.ConnectionRefused
+[33m[1mwarning[0m[2m[1m(message_bus): [0m0: on_connect: error to=1 error.ConnectionRefused
+[33m[1mwarning[0m[2m[1m(message_bus): [0m0: on_connect: error to=1 error.ConnectionRefused
+[33m[1mwarning[0m[2m[1m(message_bus): [0m0: on_connect: error to=1 error.ConnectionRefused
+[33m[1mwarning[0m[2m[1m(message_bus): [0m0: on_connect: error to=1 error.ConnectionRefused
+[33m[1mwarning[0m[2m[1m(message_bus): [0m0: on_connect: error to=1 error.ConnectionRefused
+[33m[1mwarning[0m[2m[1m(message_bus): [0m0: on_connect: error to=1 error.ConnectionRefused
+[33m[1mwarning[0m[2m[1m(replica): [0m2n: on_prepare: not replicating op=16 commit_min=4 present=true
+[33m[1mwarning[0m[2m[1m(replica): [0m2n: on_prepare: not replicating op=16 commit_min=4 present=true
+[33m[1mwarning[0m[2m[1m(replica): [0m2n: on_prepare: not replicating op=16 commit_min=4 present=true
+[33m[1mwarning[0m[2m[1m(replica): [0m2n: on_prepare: not replicating op=16 commit_min=5 present=true
+[33m[1mwarning[0m[2m[1m(message_bus): [0m0: on_connect: error to=1 error.ConnectionRefused
+[33m[1mwarning[0m[2m[1m(message_bus): [0m0: on_connect: error to=1 error.ConnectionRefused
+[33m[1mwarning[0m[2m[1m(message_bus): [0m0: on_connect: error to=1 error.ConnectionRefused
+[33m[1mwarning[0m[2m[1m(message_bus): [0m0: on_connect: error to=1 error.ConnectionRefused
+[33m[1mwarning[0m[2m[1m(message_bus): [0m0: on_connect: error to=1 error.ConnectionRefused
+[33m[1mwarning[0m[2m[1m(message_bus): [0m0: on_connect: error to=1 error.ConnectionRefused
+[33m[1mwarning[0m[2m[1m(message_bus): [0m0: on_connect: error to=1 error.ConnectionRefused
+[33m[1mwarning[0m[2m[1m(replica): [0m2n: on_prepare: not replicating op=16 commit_min=8 present=true
+[33m[1mwarning[0m[2m[1m(replica): [0m2n: on_prepare: not replicating op=16 commit_min=8 present=true
+[33m[1mwarning[0m[2m[1m(message_bus): [0m0: on_connect: error to=1 error.ConnectionRefused
+[33m[1mwarning[0m[2m[1m(replica): [0m2: tick_normal_heartbeat_fault: heartbeat lost (interval=693.018ms delay=2.289s)
+[33m[1mwarning[0m[2m[1m(replica): [0m2: tick_normal_heartbeat_fault: heartbeat lost (interval=954.415ms delay=2.868s)
+[33m[1mwarning[0m[2m[1m(replica): [0m2: tick_normal_heartbeat_fault: heartbeat lost (interval=1.163s delay=3.494s)
+[33m[1mwarning[0m[2m[1m(replica): [0m2: tick_normal_heartbeat_fault: heartbeat lost (interval=1.33s delay=3.992s)
+[33m[1mwarning[0m[2m[1m(replica): [0m2: tick_normal_heartbeat_fault: heartbeat lost (interval=1.464s delay=4.403s)
+[33m[1mwarning[0m[2m[1m(clock): [0m2: synchronization failed, partitioned (sources=1 samples=1)
+[33m[1mwarning[0m[2m[1m(replica): [0m0: tick_normal_heartbeat_fault: tick delayed (interval=766.929ms delay=19.874s)
+[33m[1mwarning[0m[2m[1m(message_bus): [0m0: on_connect: error to=1 error.ConnectionRefused
+[33m[1mwarning[0m[2m[1m(replica): [0m0N: on_messages: message count=57 suspended=0
+[33m[1mwarning[0m[2m[1m(clock): [0m0: synchronization failed, partitioned (sources=1 samples=1)
+[33m[1mwarning[0m[2m[1m(message_bus): [0m0: on_connect: error to=1 error.ConnectionRefused
+[33m[1mwarning[0m[2m[1m(message_bus): [0m0: on_connect: error to=1 error.ConnectionRefused
+[33m[1mwarning[0m[2m[1m(message_bus): [0m0: on_connect: error to=1 error.ConnectionRefused
+[33m[1mwarning[0m[2m[1m(message_bus): [0m0: on_connect: error to=1 error.ConnectionRefused
+[33m[1mwarning[0m[2m[1m(message_bus): [0m0: on_connect: error to=1 error.ConnectionRefused
+[33m[1mwarning[0m[2m[1m(message_bus): [0m0: on_connect: error to=1 error.ConnectionRefused
+[33m[1mwarning[0m[2m[1m(message_bus): [0m0: on_connect: error to=1 error.ConnectionRefused
+[33m[1mwarning[0m[2m[1m(message_bus): [0m0: on_connect: error to=1 error.ConnectionRefused
+[33m[1mwarning[0m[2m[1m(message_bus): [0m0: on_connect: error to=1 error.ConnectionRefused
+[33m[1mwarning[0m[2m[1m(message_bus): [0m0: on_connect: error to=1 error.ConnectionRefused
+[33m[1mwarning[0m[2m[1m(message_bus): [0m0: on_connect: error to=1 error.ConnectionRefused
+[33m[1mwarning[0m[2m[1m(message_bus): [0m0: on_connect: error to=1 error.ConnectionRefused
+[33m[1mwarning[0m[2m[1m(message_bus): [0m0: on_connect: error to=1 error.ConnectionRefused
+[33m[1mwarning[0m[2m[1m(message_bus): [0m0: on_connect: error to=1 error.ConnectionRefused
+[33m[1mwarning[0m[2m[1m(message_bus): [0m0: on_connect: error to=1 error.ConnectionRefused
+[33m[1mwarning[0m[2m[1m(message_bus): [0m0: on_connect: error to=1 error.ConnectionRefused
+[33m[1mwarning[0m[2m[1m(message_bus): [0m0: on_connect: error to=1 error.ConnectionRefused
+[33m[1mwarning[0m[2m[1m(message_bus): [0m0: on_connect: error to=1 error.ConnectionRefused
+[33m[1mwarning[0m[2m[1m(message_bus): [0m0: on_connect: error to=1 error.ConnectionRefused
+[33m[1mwarning[0m[2m[1m(message_bus): [0m0: on_connect: error to=1 error.ConnectionRefused
+[33m[1mwarning[0m[2m[1m(message_bus): [0m0: on_connect: error to=1 error.ConnectionRefused
+[33m[1mwarning[0m[2m[1m(message_bus): [0m0: on_connect: error to=1 error.ConnectionRefused
+[33m[1mwarning[0m[2m[1m(message_bus): [0m0: on_connect: error to=1 error.ConnectionRefused
+[33m[1mwarning[0m[2m[1m(message_bus): [0m0: on_connect: error to=1 error.ConnectionRefused
+[33m[1mwarning[0m[2m[1m(message_bus): [0m0: on_connect: error to=1 error.ConnectionRefused
+[33m[1mwarning[0m[2m[1m(replica): [0m0N: on_primary_abdicate_timeout: abdicating (view=3)
+[33m[1mwarning[0m[2m[1m(message_bus): [0m0: on_connect: error to=1 error.ConnectionRefused
+[33m[1mwarning[0m[2m[1m(message_bus): [0m0: on_connect: error to=1 error.ConnectionRefused
+[33m[1mwarning[0m[2m[1m(message_bus): [0m0: on_connect: error to=1 error.ConnectionRefused
+[33m[1mwarning[0m[2m[1m(message_bus): [0m0: on_connect: error to=1 error.ConnectionRefused
+[33m[1mwarning[0m[2m[1m(message_bus): [0m0: on_connect: error to=1 error.ConnectionRefused
+[33m[1mwarning[0m[2m[1m(message_bus): [0m0: on_connect: error to=1 error.ConnectionRefused
+[33m[1mwarning[0m[2m[1m(message_bus): [0m0: on_connect: error to=1 error.ConnectionRefused
+[33m[1mwarning[0m[2m[1m(message_bus): [0m0: on_connect: error to=1 error.ConnectionRefused
+[33m[1mwarning[0m[2m[1m(message_bus): [0m0: on_connect: error to=1 error.ConnectionRefused
+[33m[1mwarning[0m[2m[1m(message_bus): [0m0: on_connect: error to=1 error.ConnectionRefused
+[33m[1mwarning[0m[2m[1m(message_bus): [0m0: on_connect: error to=1 error.ConnectionRefused
+[33m[1mwarning[0m[2m[1m(message_bus): [0m0: on_connect: error to=1 error.ConnectionRefused
+[33m[1mwarning[0m[2m[1m(message_bus): [0m0: on_connect: error to=1 error.ConnectionRefused
+[33m[1mwarning[0m[2m[1m(message_bus): [0m0: on_connect: error to=1 error.ConnectionRefused
+[33m[1mwarning[0m[2m[1m(message_bus): [0m0: on_connect: error to=1 error.ConnectionRefused
+[33m[1mwarning[0m[2m[1m(message_bus): [0m0: on_connect: error to=1 error.ConnectionRefused
+[33m[1mwarning[0m[2m[1m(replica): [0m2: tick_normal_heartbeat_fault: heartbeat lost (interval=1.096s delay=19.001s)
+[33m[1mwarning[0m[2m[1m(clock): [0m2: synchronization failed, no agreement (sources=2 samples=3)
+[33m[1mwarning[0m[2m[1m(replica): [0m2n: on_messages: message count=47 suspended=0
+SPILL NATIVE PASS: read kill, write corruption/kill, replay, 128 MiB join, full restart, atomic result=22
+[  115.521863] reboot: Power down

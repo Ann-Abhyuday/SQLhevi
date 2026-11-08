@@ -1,0 +1,4 @@
+progress seed=1 requests=100 ticks=2071
+error(replica): 2N: on_request: ignoring newer request (client|network bug)
+error(replica): 2N: on_request: ignoring newer request (client|network bug)
+PASS seed=1 requests=120 replies=125 ticks=4373 digest=30d34489d77734d2d0775e7fb896441a view=3 checkpoint=115 faulty_sectors_max=10

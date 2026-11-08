@@ -1,0 +1,95 @@
+GUEST: loading /lib/virtio_blk.ko
+GUEST: loading /lib/crc16.ko
+GUEST: loading /lib/mbcache.ko
+GUEST: loading /lib/jbd2.ko
+GUEST: loading /lib/ext4.ko
+GUEST: ext4 mounted; loopback ready; running native io_uring tests
+SQLhevi replica=2 cluster=0 listening; io_uring storage
+SQLhevi replica=1 cluster=0 listening; io_uring storage
+SQLhevi replica=0 cluster=0 listening; io_uring storage
+[33m[1mwarning[0m[2m[1m(replica): [0m1N: on_request: dropping (clock not synchronized)
+[33m[1mwarning[0m[2m[1m(message_bus): [0m1: on_recv: from=.{ .replica = 0 } error.ConnectionResetByPeer
+[33m[1mwarning[0m[2m[1m(replica): [0m2: tick_normal_heartbeat_fault: heartbeat lost (interval=465.092ms delay=1.403s)
+[33m[1mwarning[0m[2m[1m(replica): [0m1: tick_normal_heartbeat_fault: tick delayed (interval=468.834ms delay=3.161s)
+[33m[1mwarning[0m[2m[1m(message_bus): [0m1: on_send: to=.{ .client_likely = 178439922626544934271877033783794407301 } error.BrokenPipe
+SQLhevi replica=0 cluster=0 listening; io_uring storage
+[33m[1mwarning[0m[2m[1m(replica): [0m2: tick_normal_heartbeat_fault: heartbeat lost (interval=805.386ms delay=3.247s)
+SCRATCH TEST: injecting kill_read after 48 real io_uring writes
+[33m[1mwarning[0m[2m[1m(replica): [0m2: tick_normal_heartbeat_fault: heartbeat lost (interval=278.637ms delay=837.164ms)
+[33m[1mwarning[0m[2m[1m(replica): [0m2: tick_normal_heartbeat_fault: heartbeat lost (interval=390.343ms delay=1.172s)
+[33m[1mwarning[0m[2m[1m(journal): [0m0: recover_slot: recovered slot=0003 label=@G decision=fix operation=.register op=3 view=1
+[33m[1mwarning[0m[2m[1m(journal): [0m0: recover_slot: recovered slot=0004 label=@G decision=fix operation=@enumFromInt(128) op=4 view=1
+SQLhevi replica=0 cluster=0 listening; io_uring storage
+[33m[1mwarning[0m[2m[1m(replica): [0m1: tick_normal_heartbeat_fault: tick delayed (interval=295.906ms delay=3.312s)
+[33m[1mwarning[0m[2m[1m(replica): [0m1N: on_messages: message count=10 suspended=0
+[33m[1mwarning[0m[2m[1m(message_bus): [0m1: on_send: to=.{ .client_likely = 131643923158101943859343248279432212531 } error.BrokenPipe
+[33m[1mwarning[0m[2m[1m(replica): [0m2: tick_normal_heartbeat_fault: heartbeat lost (interval=664.953ms delay=3.053s)
+SCRATCH TEST: injecting corrupt_write after 48 real io_uring writes
+[31m[1merror[0m[2m[1m: [0mlocal scratch failure: ScratchCorrupt; stopping replica before applying SQL
+[33m[1mwarning[0m[2m[1m(message_bus): [0m1: on_recv: from=.{ .replica = 0 } error.ConnectionResetByPeer
+[33m[1mwarning[0m[2m[1m(replica): [0m2: tick_normal_heartbeat_fault: heartbeat lost (interval=354.151ms delay=1.071s)
+[33m[1mwarning[0m[2m[1m(journal): [0m0: recover_slot: recovered slot=0007 label=@G decision=fix operation=.register op=7 view=1
+[33m[1mwarning[0m[2m[1m(journal): [0m0: recover_slot: recovered slot=0008 label=@G decision=fix operation=@enumFromInt(128) op=8 view=1
+SQLhevi replica=0 cluster=0 listening; io_uring storage
+[33m[1mwarning[0m[2m[1m(replica): [0m2: tick_normal_heartbeat_fault: heartbeat lost (interval=497.693ms delay=1.502s)
+[33m[1mwarning[0m[2m[1m(replica): [0m1: tick_normal_heartbeat_fault: tick delayed (interval=355.311ms delay=3.208s)
+[33m[1mwarning[0m[2m[1m(replica): [0m1N: on_messages: message count=12 suspended=0
+[33m[1mwarning[0m[2m[1m(message_bus): [0m1: on_send: to=.{ .client_likely = 20349262493564996032166957793796138423 } error.BrokenPipe
+[33m[1mwarning[0m[2m[1m(replica): [0m2: tick_normal_heartbeat_fault: heartbeat lost (interval=650.505ms delay=2.502s)
+SCRATCH TEST: injecting kill_write after 48 real io_uring writes
+[33m[1mwarning[0m[2m[1m(replica): [0m2: tick_normal_heartbeat_fault: heartbeat lost (interval=274.83ms delay=830.9ms)
+SQLhevi replica=0 cluster=0 listening; io_uring storage
+[33m[1mwarning[0m[2m[1m(replica): [0m2: tick_normal_heartbeat_fault: heartbeat lost (interval=386.044ms delay=1.162s)
+[33m[1mwarning[0m[2m[1m(replica): [0m2: tick_normal_heartbeat_fault: heartbeat lost (interval=541.305ms delay=1.633s)
+[33m[1mwarning[0m[2m[1m(replica): [0m2: tick_normal_heartbeat_fault: heartbeat lost (interval=759.663ms delay=2.286s)
+[33m[1mwarning[0m[2m[1m(replica): [0m0: tick_normal_heartbeat_fault: heartbeat lost (interval=2s delay=6s)
+[33m[1mwarning[0m[2m[1m(replica): [0m0n: on_messages: suspending command=prepare op=16 view=1 checksum=0fb1ffd4c5b7b8b4ae7253daf778e8a1
+[33m[1mwarning[0m[2m[1m(replica): [0m0n: on_messages: suspending command=prepare op=16 view=1 checksum=0fb1ffd4c5b7b8b4ae7253daf778e8a1
+[33m[1mwarning[0m[2m[1m(replica): [0m0n: on_messages: suspending command=prepare op=16 view=1 checksum=0fb1ffd4c5b7b8b4ae7253daf778e8a1
+[33m[1mwarning[0m[2m[1m(replica): [0m0n: on_messages: suspending command=prepare op=16 view=1 checksum=0fb1ffd4c5b7b8b4ae7253daf778e8a1
+[33m[1mwarning[0m[2m[1m(replica): [0m0n: on_messages: suspending command=prepare op=16 view=1 checksum=0fb1ffd4c5b7b8b4ae7253daf778e8a1
+[33m[1mwarning[0m[2m[1m(replica): [0m0n: on_messages: suspending command=prepare op=16 view=1 checksum=0fb1ffd4c5b7b8b4ae7253daf778e8a1
+[33m[1mwarning[0m[2m[1m(replica): [0m0n: on_messages: suspending command=prepare op=16 view=1 checksum=0fb1ffd4c5b7b8b4ae7253daf778e8a1
+[33m[1mwarning[0m[2m[1m(replica): [0m0n: on_messages: message count=13 suspended=7
+[33m[1mwarning[0m[2m[1m(replica): [0m0: tick_normal_heartbeat_fault: heartbeat lost (interval=1.072s delay=3.225s)
+[33m[1mwarning[0m[2m[1m(replica): [0m0: tick_normal_heartbeat_fault: heartbeat lost (interval=1.258s delay=3.777s)
+[33m[1mwarning[0m[2m[1m(replica): [0m0n: on_repair_sync_timeout: request sync; lagging behind cluster (op_head=16 commit_min=10 commit_max=15 commit_stage=idle)
+[33m[1mwarning[0m[2m[1m(replica): [0m1: tick_normal_heartbeat_fault: tick delayed (interval=315.683ms delay=20.926s)
+[33m[1mwarning[0m[2m[1m(clock): [0m1: synchronization failed, partitioned (sources=1 samples=1)
+[33m[1mwarning[0m[2m[1m(replica): [0m1N: on_messages: message count=11 suspended=0
+[33m[1mwarning[0m[2m[1m(replica): [0m1n: on_prepare: not replicating op=16 commit_min=16 present=true
+[33m[1mwarning[0m[2m[1m(replica): [0m1n: on_prepare: not replicating op=16 commit_min=16 present=true
+[33m[1mwarning[0m[2m[1m(replica): [0m1n: on_prepare: not replicating op=16 commit_min=16 present=true
+[33m[1mwarning[0m[2m[1m(replica): [0m1n: on_prepare: not replicating op=16 commit_min=16 present=true
+[33m[1mwarning[0m[2m[1m(replica): [0m1n: on_prepare: not replicating op=16 commit_min=16 present=true
+[33m[1mwarning[0m[2m[1m(replica): [0m1n: on_prepare: not replicating op=16 commit_min=16 present=true
+[33m[1mwarning[0m[2m[1m(replica): [0m1n: on_prepare: not replicating op=16 commit_min=16 present=true
+[33m[1mwarning[0m[2m[1m(replica): [0m1n: on_prepare: not replicating op=16 commit_min=16 present=true
+[33m[1mwarning[0m[2m[1m(replica): [0m1n: on_messages: message count=41 suspended=0
+[33m[1mwarning[0m[2m[1m(replica): [0m1n: on_messages: message count=75 suspended=0
+[33m[1mwarning[0m[2m[1m(message_bus): [0m1: on_send: to=.{ .client_likely = 288215905235990002106412596370872307255 } error.BrokenPipe
+[33m[1mwarning[0m[2m[1m(superblock_quorums): [0mquorum: checksum=6a096f9e5fad65d9c0a5ef1f9e0bd0d0 parent=a59c1b20fd2c5771b69b3808fd453549 sequence=3 count=3 valid=true
+[33m[1mwarning[0m[2m[1m(superblock_quorums): [0mquorum: checksum=6234ac51753430bbd407ccedc7e8046a parent=6a096f9e5fad65d9c0a5ef1f9e0bd0d0 sequence=4 count=1 valid=false
+[33m[1mwarning[0m[2m[1m(superblock): [0mnull: repair: copy=0
+SQLhevi replica=0 cluster=0 listening; io_uring storage
+SQLhevi replica=1 cluster=0 listening; io_uring storage
+SQLhevi replica=2 cluster=0 listening; io_uring storage
+[33m[1mwarning[0m[2m[1m(replica): [0m0V: on_messages: suspending command=prepare op=13 view=1 checksum=7e76959712776ecdb657fec7fc84c002
+[33m[1mwarning[0m[2m[1m(replica): [0m0V: on_messages: suspending command=prepare op=14 view=1 checksum=bba3b5bfa9e32f3110c9f8c85113c152
+[33m[1mwarning[0m[2m[1m(replica): [0m0v: on_messages: message count=10 suspended=0
+[33m[1mwarning[0m[2m[1m(replica): [0m1V: on_messages: message count=10 suspended=0
+[33m[1mwarning[0m[2m[1m(replica): [0m0n: on_prepare: not replicating op=16 commit_min=15 present=true
+[33m[1mwarning[0m[2m[1m(replica): [0m2n: on_prepare: not replicating op=16 commit_min=8 present=true
+[33m[1mwarning[0m[2m[1m(replica): [0m0: tick_normal_heartbeat_fault: heartbeat lost (interval=2s delay=6.002s)
+[33m[1mwarning[0m[2m[1m(replica): [0m2: tick_normal_heartbeat_fault: heartbeat lost (interval=2s delay=7.015s)
+[33m[1mwarning[0m[2m[1m(replica): [0m0: tick_normal_heartbeat_fault: heartbeat lost (interval=2s delay=6.004s)
+[33m[1mwarning[0m[2m[1m(replica): [0m0: tick_normal_heartbeat_fault: heartbeat lost (interval=2s delay=6.001s)
+[33m[1mwarning[0m[2m[1m(replica): [0m1: tick_normal_heartbeat_fault: tick delayed (interval=2s delay=21.375s)
+[33m[1mwarning[0m[2m[1m(clock): [0m1: synchronization failed, partitioned (sources=1 samples=1)
+[33m[1mwarning[0m[2m[1m(replica): [0m1v: on_messages: message count=44 suspended=0
+[33m[1mwarning[0m[2m[1m(replica): [0m2: tick_normal_heartbeat_fault: tick delayed (interval=2s delay=20.587s)
+[33m[1mwarning[0m[2m[1m(clock): [0m2: synchronization failed, partitioned (sources=1 samples=1)
+[33m[1mwarning[0m[2m[1m(replica): [0m2N: on_messages: message count=50 suspended=0
+SPILL NATIVE PASS: read kill, write corruption/kill, replay, 128 MiB join, full restart, atomic result=22
+[33m[1mwarning[0m[2m[1m(message_bus): [0m2: on_recv: from=.{ .replica = 0 } error.ConnectionResetByPeer
+[  126.589683] reboot: Power down

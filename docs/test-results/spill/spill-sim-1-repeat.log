@@ -1,0 +1,3 @@
+progress seed=1 requests=100 ticks=2337
+SPILL PASS faults=7; local files, replica death, replay, atomic writes
+PASS seed=1 requests=120 replies=141 ticks=5965 digest=6012d7886c5b929fcbe9fcb102c97ffd view=11 checkpoint=115 faulty_sectors_max=7

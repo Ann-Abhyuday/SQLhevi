@@ -1,0 +1,12 @@
+zig-out/bin/SQLhevi: ELF 64-bit LSB executable, x86-64, version 1 (SYSV), statically linked, with debug_info, not stripped
+
+There is no dynamic section in this file.
+zig-out/bin/SQLhevi-bench-cluster: ELF 64-bit LSB executable, x86-64, version 1 (SYSV), statically linked, with debug_info, not stripped
+
+There is no dynamic section in this file.
+zig-out/bin/SQLhevi-bench-engine: ELF 64-bit LSB executable, x86-64, version 1 (SYSV), statically linked, with debug_info, not stripped
+
+There is no dynamic section in this file.
+zig-out/bin/SQLhevi-bench-sqlite: ELF 64-bit LSB executable, x86-64, version 1 (SYSV), statically linked, with debug_info, not stripped
+
+There is no dynamic section in this file.

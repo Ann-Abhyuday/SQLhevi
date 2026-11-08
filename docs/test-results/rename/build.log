@@ -1,0 +1,90 @@
+Cobra TigerStyle: 37 files, 613 assertions, 284 functions; positive and negative checks passed
+storage_limit=1125899906842624 logical_sqlite_limit=281474976579584 manifest_nodes=1348206 manifest_node_bytes=22089007104
+Additional startup memory is required for maps, free sets, caches and SQLite.
+Build Summary: 36/36 steps succeeded; 19/19 tests passed
+install success
++- install SQLhevi success
+|  +- compile exe SQLhevi ReleaseSafe x86_64-linux-musl success 28s MaxRSS:934M
+|     +- WriteFile cached
+|     +- compile lib sqlite3 ReleaseSafe x86_64-linux-musl cached 4ms MaxRSS:36M
+|     +- compile lib sqlite3 ReleaseSafe x86_64-linux-musl (reused)
+|     +- options cached
+|     +- options cached
+|     +- options cached
++- install SQLhevi-sim success
+|  +- compile exe SQLhevi-sim ReleaseSafe x86_64-linux-musl success 27s MaxRSS:939M
+|     +- WriteFile (reused)
+|     +- compile lib sqlite3 ReleaseSafe x86_64-linux-musl (reused)
+|     +- compile lib sqlite3 ReleaseSafe x86_64-linux-musl (reused)
+|     +- options (reused)
+|     +- options (reused)
+|     +- options (reused)
++- install SQLhevi-test-cluster success
+   +- compile exe SQLhevi-test-cluster ReleaseSafe x86_64-linux-musl success 10s MaxRSS:482M
+      +- WriteFile (reused)
+      +- compile lib sqlite3 ReleaseSafe x86_64-linux-musl (reused)
+      +- compile lib sqlite3 ReleaseSafe x86_64-linux-musl (reused)
+      +- options (reused)
+      +- options (reused)
+      +- options (reused)
+benchmarks success
++- install SQLhevi-bench-sqlite success
+|  +- compile exe SQLhevi-bench-sqlite ReleaseSafe x86_64-linux-musl success 12s MaxRSS:523M
+|     +- WriteFile cached
+|     +- compile lib sqlite3-benchmark ReleaseSafe x86_64-linux-musl cached 4ms MaxRSS:35M
+|     +- compile lib sqlite3-benchmark ReleaseSafe x86_64-linux-musl (reused)
++- install SQLhevi-bench-engine success
+|  +- compile exe SQLhevi-bench-engine ReleaseSafe x86_64-linux-musl success 11s MaxRSS:556M
+|     +- WriteFile (reused)
+|     +- compile lib sqlite3 ReleaseSafe x86_64-linux-musl (reused)
+|     +- compile lib sqlite3 ReleaseSafe x86_64-linux-musl (reused)
+|     +- options (reused)
+|     +- options (reused)
+|     +- options (reused)
++- install SQLhevi-bench-cluster success
+   +- compile exe SQLhevi-bench-cluster ReleaseSafe x86_64-linux-musl success 12s MaxRSS:572M
+      +- WriteFile (reused)
+      +- compile lib sqlite3 ReleaseSafe x86_64-linux-musl (reused)
+      +- compile lib sqlite3 ReleaseSafe x86_64-linux-musl (reused)
+      +- options (reused)
+      +- options (reused)
+      +- options (reused)
+spill-tests success
++- install SQLhevi-fault-test success
+|  +- compile exe SQLhevi-fault-test ReleaseSafe x86_64-linux-musl success 26s MaxRSS:934M
+|     +- WriteFile (reused)
+|     +- compile lib sqlite3 ReleaseSafe x86_64-linux-musl (reused)
+|     +- compile lib sqlite3 ReleaseSafe x86_64-linux-musl (reused)
+|     +- options (reused)
+|     +- options (reused)
+|     +- options (reused)
++- install SQLhevi-test-spill success
+   +- compile exe SQLhevi-test-spill ReleaseSafe x86_64-linux-musl success 11s MaxRSS:499M
+      +- WriteFile (reused)
+      +- compile lib sqlite3 ReleaseSafe x86_64-linux-musl (reused)
+      +- compile lib sqlite3 ReleaseSafe x86_64-linux-musl (reused)
+      +- options (reused)
+      +- options (reused)
+      +- options (reused)
+container-tests success
++- install SQLhevi-test-containers success
+   +- compile exe SQLhevi-test-containers ReleaseSafe x86_64-linux-musl success 14s MaxRSS:608M
+      +- WriteFile (reused)
+      +- compile lib sqlite3 ReleaseSafe x86_64-linux-musl (reused)
+      +- compile lib sqlite3 ReleaseSafe x86_64-linux-musl (reused)
+      +- options (reused)
+      +- options (reused)
+      +- options (reused)
+check success
++- run test 19 pass (19 total) 2s MaxRSS:113M
+|  +- compile test ReleaseSafe x86_64-linux-musl success 11s MaxRSS:536M
+|     +- WriteFile (reused)
+|     +- compile lib sqlite3 ReleaseSafe x86_64-linux-musl (reused)
+|     +- compile lib sqlite3 ReleaseSafe x86_64-linux-musl (reused)
+|     +- options (reused)
++- zig fmt --check success
++- run exe tigerstyle success 64ms
+|  +- compile exe tigerstyle ReleaseSafe x86_64-linux-musl cached 7ms MaxRSS:38M
++- run exe SQLhevi success 2ms
+   +- compile exe SQLhevi ReleaseSafe x86_64-linux-musl (+6 more reused dependencies)
+

@@ -1,0 +1,44 @@
+zig-out/bin/SQLhevi:              ELF 64-bit LSB executable, x86-64, version 1 (SYSV), statically linked, with debug_info, not stripped
+zig-out/bin/SQLhevi-sim:          ELF 64-bit LSB executable, x86-64, version 1 (SYSV), statically linked, with debug_info, not stripped
+zig-out/bin/SQLhevi-test-cluster: ELF 64-bit LSB executable, x86-64, version 1 (SYSV), statically linked, with debug_info, not stripped
+dependencies/cobra/src/cobra:     ELF 64-bit LSB executable, x86-64, version 1 (GNU/Linux), statically linked, BuildID[sha1]=aeea592aed3579a0b9c3564099d6fd1a5ab2e107, for GNU/Linux 6.1.0, not stripped
+
+Elf file type is EXEC (Executable file)
+Entry point 0x106f280
+There are 7 program headers, starting at offset 64
+
+Program Headers:
+  Type           Offset             VirtAddr           PhysAddr
+                 FileSiz            MemSiz              Flags  Align
+  PHDR           0x0000000000000040 0x0000000001000040 0x0000000001000040
+                 0x0000000000000188 0x0000000000000188  R      0x8
+  LOAD           0x0000000000000000 0x0000000001000000 0x0000000001000000
+                 0x000000000006e27c 0x000000000006e27c  R      0x1000
+  LOAD           0x000000000006e280 0x000000000106f280 0x000000000106f280
+                 0x000000000028a9fd 0x000000000028a9fd  R E    0x1000
+  LOAD           0x00000000002f8c80 0x00000000012fac80 0x00000000012fac80
+                 0x0000000000007950 0x000000000401041c  RW     0x1000
+  TLS            0x00000000002f8c80 0x00000000012f9c80 0x00000000012f9c80
+                 0x0000000000000000 0x000000000004001c  R      0x8
+  GNU_EH_FRAME   0x0000000000043a98 0x0000000001043a98 0x0000000001043a98
+                 0x0000000000006774 0x0000000000006774  R      0x4
+  GNU_STACK      0x0000000000000000 0x0000000000000000 0x0000000000000000
+                 0x0000000000000000 0x0000000001000000  RW     0x0
+
+ Section to Segment mapping:
+  Segment Sections...
+   00     
+   01     .rodata .eh_frame_hdr .eh_frame 
+   02     .text 
+   03     .data .bss 
+   04     .tbss 
+   05     .eh_frame_hdr 
+   06     
+
+There is no dynamic section in this file.
+
+There is no dynamic section in this file.
+
+There is no dynamic section in this file.
+
+There is no dynamic section in this file.

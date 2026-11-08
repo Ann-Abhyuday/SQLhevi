@@ -1,0 +1,2 @@
+File: zig-out/bin/SQLhevi
+File: zig-out/bin/SQLhevi-test-containers

@@ -1,0 +1,41 @@
+Cobra TigerStyle: 25 files, 405 assertions, 181 functions; positive and negative checks passed
+storage_limit=1125899906842624 logical_sqlite_limit=281474976579584 manifest_nodes=1348206 manifest_node_bytes=22089007104
+Additional startup memory is required for maps, free sets, caches and SQLite.
+Build Summary: 21/21 steps succeeded; 12/12 tests passed
+benchmarks success
++- install SQLhevi-bench-sqlite success
+|  +- compile exe SQLhevi-bench-sqlite ReleaseSafe x86_64-linux-musl success 17s MaxRSS:517M
+|     +- WriteFile cached
+|     +- compile lib sqlite3-benchmark ReleaseSafe x86_64-linux-musl cached 4ms MaxRSS:39M
+|     +- compile lib sqlite3-benchmark ReleaseSafe x86_64-linux-musl (reused)
++- install SQLhevi-bench-engine cached
+|  +- compile exe SQLhevi-bench-engine ReleaseSafe x86_64-linux-musl cached 17ms MaxRSS:41M
+|     +- WriteFile cached
+|     +- compile lib sqlite3 ReleaseSafe x86_64-linux-musl cached 7ms MaxRSS:40M
+|     +- compile lib sqlite3 ReleaseSafe x86_64-linux-musl (reused)
+|     +- options cached
+|     +- options cached
++- install SQLhevi-bench-cluster cached
+   +- compile exe SQLhevi-bench-cluster ReleaseSafe x86_64-linux-musl cached 8ms MaxRSS:41M
+      +- WriteFile (reused)
+      +- compile lib sqlite3 ReleaseSafe x86_64-linux-musl (reused)
+      +- compile lib sqlite3 ReleaseSafe x86_64-linux-musl (reused)
+      +- options (reused)
+      +- options (reused)
+check success
++- run test 12 pass (12 total) 1s MaxRSS:103M
+|  +- compile test ReleaseSafe x86_64-linux-musl cached 16ms MaxRSS:42M
+|     +- WriteFile (reused)
+|     +- compile lib sqlite3 ReleaseSafe x86_64-linux-musl (reused)
+|     +- compile lib sqlite3 ReleaseSafe x86_64-linux-musl (reused)
++- zig fmt --check success
++- run exe tigerstyle success 54ms
+|  +- compile exe tigerstyle ReleaseSafe x86_64-linux-musl cached 12ms MaxRSS:41M
++- run exe SQLhevi success 16ms
+   +- compile exe SQLhevi ReleaseSafe x86_64-linux-musl cached 13ms MaxRSS:42M
+      +- WriteFile (reused)
+      +- compile lib sqlite3 ReleaseSafe x86_64-linux-musl (reused)
+      +- compile lib sqlite3 ReleaseSafe x86_64-linux-musl (reused)
+      +- options (reused)
+      +- options (reused)
+

@@ -1,0 +1,24 @@
+Build Summary: 11/11 steps succeeded
+install success
++- install SQLhevi success
+|  +- compile exe SQLhevi ReleaseSafe x86_64-linux-musl success 25s MaxRSS:925M
+|     +- WriteFile cached
+|     +- compile lib sqlite3 ReleaseSafe x86_64-linux-musl cached 3ms MaxRSS:40M
+|     +- compile lib sqlite3 ReleaseSafe x86_64-linux-musl (reused)
+|     +- options cached
+|     +- options cached
++- install SQLhevi-sim success
+|  +- compile exe SQLhevi-sim ReleaseSafe x86_64-linux-musl success 23s MaxRSS:913M
+|     +- WriteFile (reused)
+|     +- compile lib sqlite3 ReleaseSafe x86_64-linux-musl (reused)
+|     +- compile lib sqlite3 ReleaseSafe x86_64-linux-musl (reused)
+|     +- options (reused)
+|     +- options (reused)
++- install SQLhevi-test-cluster cached
+   +- compile exe SQLhevi-test-cluster ReleaseSafe x86_64-linux-musl cached 6ms MaxRSS:41M
+      +- WriteFile (reused)
+      +- compile lib sqlite3 ReleaseSafe x86_64-linux-musl (reused)
+      +- compile lib sqlite3 ReleaseSafe x86_64-linux-musl (reused)
+      +- options (reused)
+      +- options (reused)
+

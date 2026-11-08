@@ -1,0 +1,17 @@
+progress seed=42 requests=100 ticks=1958
+progress seed=42 requests=200 ticks=3663
+progress seed=42 requests=300 ticks=5390
+progress seed=42 requests=400 ticks=7050
+progress seed=42 requests=500 ticks=8805
+progress seed=42 requests=600 ticks=10482
+progress seed=42 requests=700 ticks=12228
+progress seed=42 requests=800 ticks=13901
+error(replica): 2N: on_request: ignoring newer request (client|network bug)
+error(replica): 2N: on_request: ignoring newer request (client|network bug)
+error(replica): 2N: on_request: ignoring newer request (client|network bug)
+error(replica): 2N: on_request: ignoring newer request (client|network bug)
+progress seed=42 requests=900 ticks=15702
+progress seed=42 requests=1000 ticks=17306
+error(replica): 0N: on_request: ignoring newer request (client|network bug)
+error(replica): 0N: on_request: ignoring newer request (client|network bug)
+PASS seed=42 requests=1000 replies=1005 ticks=19000 digest=c76292b8e9a08a910441a08987c49e53 view=3 checkpoint=927 faulty_sectors_max=9

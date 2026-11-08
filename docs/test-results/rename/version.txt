@@ -1,0 +1,1 @@
+SQLhevi 0.1.0-dev; SQLite 3.55.0; VSR; static; Linux io_uring; SQLite pool/hard limit=536870912 bytes; local temp spill

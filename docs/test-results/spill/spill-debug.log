@@ -1,0 +1,9 @@
+Build Summary: 6/6 steps succeeded; 19/19 tests passed
+test success
++- run test 19 pass (19 total) 21s MaxRSS:102M
+   +- compile test Debug x86_64-linux-musl success 1s MaxRSS:741M
+      +- WriteFile cached
+      +- compile lib sqlite3 Debug x86_64-linux-musl cached 9ms MaxRSS:34M
+      +- compile lib sqlite3 Debug x86_64-linux-musl (reused)
+      +- options cached
+

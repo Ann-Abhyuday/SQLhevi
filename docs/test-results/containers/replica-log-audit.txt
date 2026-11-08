@@ -1,0 +1,3 @@
+183 replica startup-generation logs examined.
+1094041 uncompressed bytes.
+0 panic/assertion/fatal/error-colon matches.

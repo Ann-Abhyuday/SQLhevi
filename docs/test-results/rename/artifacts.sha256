@@ -1,0 +1,9 @@
+45423c64202bbbdd60735a92a9a5aedc405ab69616fd483e366e4b7f94fe8e8b  zig-out/bin/SQLhevi
+bbe0d8bbdcda9a18cfdc2b017c37d6b3145bfdf75d5cafb046fa0f05936a5ada  zig-out/bin/SQLhevi-bench-cluster
+7d6af5e7e48c1d61c879ea090f71252a315b7a426c1b1aa112de8a86c81e8efb  zig-out/bin/SQLhevi-bench-engine
+d21c7d08511b78ccd0369fcdcb61c84739feb5f06f7b076db41fd4532ed56b5a  zig-out/bin/SQLhevi-bench-sqlite
+138347d01a5457f1b1cc8f17b71ca349df96161d4ad4df5e730cb51f1d9bdf9e  zig-out/bin/SQLhevi-fault-test
+df266aa0ef5157009d802813ac6739034350429c1ed7dcfe0080afbff87acdb6  zig-out/bin/SQLhevi-sim
+dab7bae93c307ecc0d8b58aafe6fd08b6620551135c05792e9adedb342ae6f01  zig-out/bin/SQLhevi-test-cluster
+6fa9d47fedf6237a713ddfaf5d661931c9b5be205c49801d3f0174b127da514d  zig-out/bin/SQLhevi-test-containers
+7e668209b8cf33aa076eef709e148aae3de426658a1560590ff270eff9024e76  zig-out/bin/SQLhevi-test-spill

@@ -1,0 +1,8 @@
+
+File: zig-out/bin/SQLhevi
+
+There is no dynamic section in this file.
+
+File: zig-out/bin/SQLhevi-test-containers
+
+There is no dynamic section in this file.

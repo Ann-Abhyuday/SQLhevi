@@ -1,0 +1,80 @@
+{
+  "ociVersion": "1.0.2",
+  "root": {
+    "path": "/data/seed-7/rootfs",
+    "readonly": true
+  },
+  "hostname": "SQLhevi-0",
+  "process": {
+    "terminal": false,
+    "user": {
+      "uid": 0,
+      "gid": 0
+    },
+    "args": [
+      "/SQLhevi",
+      "start",
+      "127.0.0.1:3601,127.0.0.1:3602,127.0.0.1:3603,127.0.0.1:3604,127.0.0.1:3605,127.0.0.1:3606",
+      "/data/replica",
+      "1073741824"
+    ],
+    "env": [
+      "PATH=/"
+    ],
+    "cwd": "/data",
+    "noNewPrivileges": true,
+    "capabilities": {
+      "bounding": [],
+      "effective": [],
+      "permitted": []
+    },
+    "rlimits": [
+      {
+        "type": "RLIMIT_NOFILE",
+        "hard": 4096,
+        "soft": 4096
+      }
+    ]
+  },
+  "mounts": [
+    {
+      "destination": "/proc",
+      "type": "proc",
+      "source": "proc"
+    },
+    {
+      "destination": "/dev",
+      "type": "tmpfs",
+      "source": "tmpfs"
+    },
+    {
+      "destination": "/data",
+      "type": "bind",
+      "source": "/data/seed-7/0/data",
+      "options": [
+        "rbind",
+        "rw"
+      ]
+    }
+  ],
+  "linux": {
+    "cgroupsPath": "/SQLhevi-0",
+    "namespaces": [
+      {
+        "type": "pid"
+      },
+      {
+        "type": "mount"
+      },
+      {
+        "type": "uts"
+      },
+      {
+        "type": "ipc"
+      },
+      {
+        "type": "cgroup"
+      }
+    ]
+  }
+}

@@ -1,0 +1,221 @@
+GUEST: loading /lib/virtio_blk.ko
+GUEST: loading /lib/crc16.ko
+GUEST: loading /lib/mbcache.ko
+GUEST: loading /lib/jbd2.ko
+GUEST: loading /lib/ext4.ko
+GUEST: ext4 mounted; loopback ready; running native io_uring tests
+SQLhevi replica=0 cluster=0 listening; io_uring storage
+SQLhevi replica=2 cluster=0 listening; io_uring storage
+SQLhevi replica=1 cluster=0 listening; io_uring storage
+[33m[1mwarning[0m[2m[1m(replica): [0m1N: on_request: dropping (clock not synchronized)
+[33m[1mwarning[0m[2m[1m(replica): [0m1N: on_request: dropping (clock not synchronized)
+[33m[1mwarning[0m[2m[1m(replica): [0m1N: client_table_entry_create: clients=32/32 evicting client=150058753292942915851198033581630692961
+[33m[1mwarning[0m[2m[1m(replica): [0m0n: client_table_entry_create: clients=32/32 evicting client=150058753292942915851198033581630692961
+[33m[1mwarning[0m[2m[1m(replica): [0m2n: client_table_entry_create: clients=32/32 evicting client=150058753292942915851198033581630692961
+[33m[1mwarning[0m[2m[1m(replica): [0m1N: client_table_entry_create: clients=32/32 evicting client=309016554032734899951988650819379061604
+[33m[1mwarning[0m[2m[1m(replica): [0m2n: client_table_entry_create: clients=32/32 evicting client=309016554032734899951988650819379061604
+[33m[1mwarning[0m[2m[1m(replica): [0m0n: client_table_entry_create: clients=32/32 evicting client=309016554032734899951988650819379061604
+[33m[1mwarning[0m[2m[1m(replica): [0m1N: client_table_entry_create: clients=32/32 evicting client=76063464677257979450488901413932980513
+[33m[1mwarning[0m[2m[1m(replica): [0m0n: client_table_entry_create: clients=32/32 evicting client=76063464677257979450488901413932980513
+[33m[1mwarning[0m[2m[1m(replica): [0m2n: client_table_entry_create: clients=32/32 evicting client=76063464677257979450488901413932980513
+[33m[1mwarning[0m[2m[1m(replica): [0m1N: client_table_entry_create: clients=32/32 evicting client=95590525518970183016322056345226336563
+[33m[1mwarning[0m[2m[1m(replica): [0m2n: client_table_entry_create: clients=[33m[1mwarning[0m[2m[1m(replica): [0m0n: client_table_entry_create: clients=32/32 evicting client=95590525518970183016322056345226336563
+32/32 evicting client=95590525518970183016322056345226336563
+[33m[1mwarning[0m[2m[1m(replica): [0m1N: client_table_entry_create: clients=32/32 evicting client=161671202148223714533912917328412710984
+[33m[1mwarning[0m[2m[1m(replica): [0m0n: client_table_entry_create: clients=32/32 evicting client=161671202148223714533912917328412710984
+[33m[1mwarning[0m[2m[1m(replica): [0m2n: client_table_entry_create: clients=32/32 evicting client=161671202148223714533912917328412710984
+[33m[1mwarning[0m[2m[1m(replica): [0m1N: client_table_entry_create: clients=32/32 evicting client=157195904453149258493748746188852349329
+[33m[1mwarning[0m[2m[1m(replica): [0m0n: client_table_entry_create: clients=32/32 evicting client=157195904453149258493748746188852349329
+[33m[1mwarning[0m[2m[1m(replica): [0m2n: client_table_entry_create: clients=32/32 evicting client=157195904453149258493748746188852349329
+[33m[1mwarning[0m[2m[1m(replica): [0m1N: client_table_entry_create: clients=32/32 evicting client=319588446681332044724093418524723238061
+[33m[1mwarning[0m[2m[1m(replica): [0m2n: client_table_entry_create: clients=32/32 evicting client=319588446681332044724093418524723238061
+[33m[1mwarning[0m[2m[1m(replica): [0m0n: client_table_entry_create: clients=32/32 evicting client=319588446681332044724093418524723238061
+[33m[1mwarning[0m[2m[1m(replica): [0m1N: client_table_entry_create: clients=32/32 evicting client=11974765073617959471006303172093684505
+[33m[1mwarning[0m[2m[1m(replica): [0m0n: client_table_entry_create: clients=32/32 evicting client=11974765073617959471006303172093684505
+[33m[1mwarning[0m[2m[1m(replica): [0m2n: client_table_entry_create: clients=32/32 evicting client=11974765073617959471006303172093684505
+[33m[1mwarning[0m[2m[1m(replica): [0m1N: client_table_entry_create: clients=32/32 evicting client=73095549630008834965367457763647790640
+[33m[1mwarning[0m[2m[1m(replica): [0m0n: client_table_entry_create: clients=32/32 evicting client=73095549630008834965367457763647790640
+[33m[1mwarning[0m[2m[1m(replica): [0m2n: client_table_entry_create: clients=32/32 evicting client=73095549630008834965367457763647790640
+[33m[1mwarning[0m[2m[1m(replica): [0m1N: client_table_entry_create: clients=32/32 evicting client=183460753115658244687657240587755065977
+[33m[1mwarning[0m[2m[1m(replica): [0m2n: client_table_entry_create: clients=32/32 evicting client=183460753115658244687657240587755065977
+[33m[1mwarning[0m[2m[1m(replica): [0m0n: client_table_entry_create: clients=32/32 evicting client=183460753115658244687657240587755065977
+[33m[1mwarning[0m[2m[1m(replica): [0m1N: client_table_entry_create: clients=32/32 evicting client=213531706709997432237968391010834696548
+[33m[1mwarning[0m[2m[1m(replica): [0m0n: client_table_entry_create: clients=32/32 evicting client=213531706709997432237968391010834696548
+[33m[1mwarning[0m[2m[1m(replica): [0m2n: client_table_entry_create: clients=32/32 evicting client=213531706709997432237968391010834696548
+[33m[1mwarning[0m[2m[1m(replica): [0m1N: client_table_entry_create: clients=32/32 evicting client=125730347252096611864620558593260639731
+[33m[1mwarning[0m[2m[1m(replica): [0m0n: client_table_entry_create: clients=32/32 evicting client=125730347252096611864620558593260639731
+[33m[1mwarning[0m[2m[1m(replica): [0m2n: client_table_entry_create: clients=32/32 evicting client=125730347252096611864620558593260639731
+[33m[1mwarning[0m[2m[1m(replica): [0m1N: client_table_entry_create: clients=32/32 evicting client=331897096700100412528350460639751406910
+[33m[1mwarning[0m[2m[1m(replica): [0m2n: client_table_entry_create: clients=[33m[1mwarning[0m[2m[1m(replica): [0m0n: client_table_entry_create: clients=32/32 evicting client=331897096700100412528350460639751406910
+32/32 evicting client=331897096700100412528350460639751406910
+[33m[1mwarning[0m[2m[1m(replica): [0m1N: client_table_entry_create: clients=32/32 evicting client=312409056535991149291078006600179202651
+[33m[1mwarning[0m[2m[1m(replica): [0m0n: client_table_entry_create: clients=32/32 evicting client=312409056535991149291078006600179202651
+[33m[1mwarning[0m[2m[1m(replica): [0m2n: client_table_entry_create: clients=32/32 evicting client=312409056535991149291078006600179202651
+[33m[1mwarning[0m[2m[1m(replica): [0m1N: client_table_entry_create: clients=32/32 evicting client=240202685957806125449680210141375778618
+[33m[1mwarning[0m[2m[1m(replica): [0m0n: client_table_entry_create: clients=32/32 evicting client=240202685957806125449680210141375778618
+[33m[1mwarning[0m[2m[1m(replica): [0m2n: client_table_entry_create: clients=32/32 evicting client=240202685957806125449680210141375778618
+[33m[1mwarning[0m[2m[1m(replica): [0m1N: client_table_entry_create: clients=32/32 evicting client=280625953660380939110515117061356194542
+[33m[1mwarning[0m[2m[1m(replica): [0m0n: client_table_entry_create: clients=32/32 evicting client=280625953660380939110515117061356194542
+[33m[1mwarning[0m[2m[1m(replica): [0m2n: client_table_entry_create: clients=32/32 evicting client=280625953660380939110515117061356194542
+[33m[1mwarning[0m[2m[1m(replica): [0m1N: client_table_entry_create: clients=32/32 evicting client=296861424121953688467626444243139303343
+[33m[1mwarning[0m[2m[1m(replica): [0m0n: client_table_entry_create: clients=32/32 evicting client=296861424121953688467626444243139303343
+[33m[1mwarning[0m[2m[1m(replica): [0m2n: client_table_entry_create: clients=32/32 evicting client=296861424121953688467626444243139303343
+[33m[1mwarning[0m[2m[1m(replica): [0m1N: client_table_entry_create: clients=32/32 evicting client=132147556299980478817893677658154779313
+[33m[1mwarning[0m[2m[1m(replica): [0m0n: client_table_entry_create: clients=32/32 evicting client=132147556299980478817893677658154779313
+[33m[1mwarning[0m[2m[1m(replica): [0m2n: client_table_entry_create: clients=32/32 evicting client=132147556299980478817893677658154779313
+[33m[1mwarning[0m[2m[1m(replica): [0m1N: client_table_entry_create: clients=32/32 evicting client=185262452357989894670378645082911201870
+[33m[1mwarning[0m[2m[1m(replica): [0m2n: client_table_entry_create: clients=32/32 evicting client=185262452357989894670378645082911201870
+[33m[1mwarning[0m[2m[1m(replica): [0m0n: client_table_entry_create: clients=32/32 evicting client=185262452357989894670378645082911201870
+[33m[1mwarning[0m[2m[1m(replica): [0m1N: client_table_entry_create: clients=32/32 evicting client=237394100036458388933358337506586569720
+[33m[1mwarning[0m[2m[1m(replica): [0m0n: client_table_entry_create: clients=32/32 evicting client=237394100036458388933358337506586569720
+[33m[1mwarning[0m[2m[1m(replica): [0m2n: client_table_entry_create: clients=32/32 evicting client=237394100036458388933358337506586569720
+[33m[1mwarning[0m[2m[1m(replica): [0m1N: client_table_entry_create: clients=32/32 evicting client=331955128676831883377618274198032491888
+[33m[1mwarning[0m[2m[1m(replica): [0m2n: client_table_entry_create: clients=32/32 evicting client=331955128676831883377618274198032491888
+[33m[1mwarning[0m[2m[1m(replica): [0m0n: client_table_entry_create: clients=32/32 evicting client=331955128676831883377618274198032491888
+[33m[1mwarning[0m[2m[1m(replica): [0m1N: client_table_entry_create: clients=32/32 evicting client=71814807782815067762708195714977318735
+[33m[1mwarning[0m[2m[1m(replica): [0m0n: client_table_entry_create: clients=32/32 evicting client=71814807782815067762708195714977318735
+[33m[1mwarning[0m[2m[1m(replica): [0m2n: client_table_entry_create: clients=32/32 evicting client=71814807782815067762708195714977318735
+[33m[1mwarning[0m[2m[1m(replica): [0m1N: client_table_entry_create: clients=32/32 evicting client=213976519918410133851141841909320057458
+[33m[1mwarning[0m[2m[1m(replica): [0m0n: client_table_entry_create: clients=[33m[1mwarning[0m[2m[1m(replica): [0m2n: client_table_entry_create: clients=32/32 evicting client=213976519918410133851141841909320057458
+32/32 evicting client=213976519918410133851141841909320057458
+[33m[1mwarning[0m[2m[1m(replica): [0m1N: client_table_entry_create: clients=32/32 evicting client=55749708482343685115334599513803352532
+[33m[1mwarning[0m[2m[1m(replica): [0m0n: client_table_entry_create: clients=32/32 evicting client=55749708482343685115334599513803352532
+[33m[1mwarning[0m[2m[1m(replica): [0m2n: client_table_entry_create: clients=32/32 evicting client=55749708482343685115334599513803352532
+[33m[1mwarning[0m[2m[1m(replica): [0m1N: client_table_entry_create: clients=32/32 evicting client=167871825606687000168638735530085149445
+[33m[1mwarning[0m[2m[1m(replica): [0m0n: client_table_entry_create: clients=32/32 evicting client=167871825606687000168638735530085149445
+[33m[1mwarning[0m[2m[1m(replica): [0m2n: client_table_entry_create: clients=32/32 evicting client=167871825606687000168638735530085149445
+[33m[1mwarning[0m[2m[1m(replica): [0m1N: client_table_entry_create: clients=32/32 evicting client=51312199774189893122298752203927343064
+[33m[1mwarning[0m[2m[1m(replica): [0m0n: client_table_entry_create: clients=32/32 evicting client=51312199774189893122298752203927343064
+[33m[1mwarning[0m[2m[1m(replica): [0m2n: client_table_entry_create: clients=32/32 evicting client=51312199774189893122298752203927343064
+[33m[1mwarning[0m[2m[1m(replica): [0m1N: client_table_entry_create: clients=32/32 evicting client=48967055921264603244614624660191549209
+[33m[1mwarning[0m[2m[1m(replica): [0m2n: client_table_entry_create: clients=[33m[1mwarning[0m[2m[1m(replica): [0m0n: client_table_entry_create: clients=32/32 evicting client=48967055921264603244614624660191549209
+32/32 evicting client=48967055921264603244614624660191549209
+[33m[1mwarning[0m[2m[1m(replica): [0m1N: client_table_entry_create: clients=32/32 evicting client=295354837549745135013870613080140646806
+[33m[1mwarning[0m[2m[1m(replica): [0m0n: client_table_entry_create: clients=32/32 evicting client=295354837549745135013870613080140646806
+[33m[1mwarning[0m[2m[1m(replica): [0m2n: client_table_entry_create: clients=32/32 evicting client=295354837549745135013870613080140646806
+[33m[1mwarning[0m[2m[1m(replica): [0m1N: client_table_entry_create: clients=32/32 evicting client=108790540683820855148052917105597497850
+[33m[1mwarning[0m[2m[1m(replica): [0m2n: client_table_entry_create: clients=32/32 evicting client=108790540683820855148052917105597497850
+[33m[1mwarning[0m[2m[1m(replica): [0m0n: client_table_entry_create: clients=32/32 evicting client=108790540683820855148052917105597497850
+[33m[1mwarning[0m[2m[1m(replica): [0m1N: client_table_entry_create: clients=32/32 evicting client=16683729265592334474571533820138947669
+[33m[1mwarning[0m[2m[1m(replica): [0m2n: client_table_entry_create: clients=[33m[1mwarning[0m[2m[1m(replica): [0m0n: client_table_entry_create: clients=32/32 evicting client=16683729265592334474571533820138947669
+32/32 evicting client=16683729265592334474571533820138947669
+[33m[1mwarning[0m[2m[1m(replica): [0m1N: client_table_entry_create: clients=32/32 evicting client=22845727981840341581891075153748049119
+[33m[1mwarning[0m[2m[1m(replica): [0m0n: client_table_entry_create: clients=32/32 evicting client=22845727981840341581891075153748049119
+[33m[1mwarning[0m[2m[1m(replica): [0m2n: client_table_entry_create: clients=32/32 evicting client=22845727981840341581891075153748049119
+[33m[1mwarning[0m[2m[1m(replica): [0m1N: client_table_entry_create: clients=32/32 evicting client=31970222076902127360009471007809371811
+[33m[1mwarning[0m[2m[1m(replica): [0m0n: client_table_entry_create: clients=32/32 evicting client=31970222076902127360009471007809371811
+[33m[1mwarning[0m[2m[1m(replica): [0m2n: client_table_entry_create: clients=32/32 evicting client=31970222076902127360009471007809371811
+[33m[1mwarning[0m[2m[1m(replica): [0m1N: client_table_entry_create: clients=32/32 evicting client=56693967869555208944376567890124706410
+[33m[1mwarning[0m[2m[1m(replica): [0m0n: client_table_entry_create: clients=32/32 evicting client=56693967869555208944376567890124706410
+[33m[1mwarning[0m[2m[1m(replica): [0m2n: client_table_entry_create: clients=32/32 evicting client=56693967869555208944376567890124706410
+[33m[1mwarning[0m[2m[1m(replica): [0m1N: client_table_entry_create: clients=32/32 evicting client=137540600761682343322055630332041743302
+[33m[1mwarning[0m[2m[1m(replica): [0m2n: client_table_entry_create: clients=32/32 evicting client=137540600761682343322055630332041743302
+[33m[1mwarning[0m[2m[1m(replica): [0m0n: client_table_entry_create: clients=32/32 evicting client=137540600761682343322055630332041743302
+[33m[1mwarning[0m[2m[1m(replica): [0m1N: client_table_entry_create: clients=32/32 evicting client=66066115073092046025595295534218455005
+[33m[1mwarning[0m[2m[1m(replica): [0m2n: client_table_entry_create: clients=[33m[1mwarning[0m[2m[1m(replica): [0m0n: client_table_entry_create: clients=32/32 evicting client=66066115073092046025595295534218455005
+32/32 evicting client=66066115073092046025595295534218455005
+[33m[1mwarning[0m[2m[1m(replica): [0m1N: client_table_entry_create: clients=32/32 evicting client=261145062330680810651616310094359423785
+[33m[1mwarning[0m[2m[1m(replica): [0m0n: client_table_entry_create: clients=32/32 evicting client=261145062330680810651616310094359423785
+[33m[1mwarning[0m[2m[1m(replica): [0m2n: client_table_entry_create: clients=32/32 evicting client=261145062330680810651616310094359423785
+[33m[1mwarning[0m[2m[1m(replica): [0m1N: client_table_entry_create: clients=32/32 evicting client=178412470055551765422368582752638954689
+[33m[1mwarning[0m[2m[1m(replica): [0m0n: client_table_entry_create: clients=[33m[1mwarning[0m[2m[1m(replica): [0m2n: client_table_entry_create: clients=32/32 evicting client=178412470055551765422368582752638954689
+32/32 evicting client=178412470055551765422368582752638954689
+[33m[1mwarning[0m[2m[1m(replica): [0m1N: client_table_entry_create: clients=32/32 evicting client=139416107285538454444264247428043691499
+[33m[1mwarning[0m[2m[1m(replica): [0m0n: client_table_entry_create: clients=[33m[1mwarning[0m[2m[1m(replica): [0m2n: client_table_entry_create: clients=32/32 evicting client=139416107285538454444264247428043691499
+32/32 evicting client=139416107285538454444264247428043691499
+[33m[1mwarning[0m[2m[1m(replica): [0m1N: client_table_entry_create: clients=32/32 evicting client=187478675355929279782103899893592060004
+[33m[1mwarning[0m[2m[1m(replica): [0m0n: client_table_entry_create: clients=32/32 evicting client=187478675355929279782103899893592060004
+[33m[1mwarning[0m[2m[1m(replica): [0m2n: client_table_entry_create: clients=32/32 evicting client=187478675355929279782103899893592060004
+[33m[1mwarning[0m[2m[1m(replica): [0m1N: client_table_entry_create: clients=32/32 evicting client=58707516419434805650485306150752767408
+[33m[1mwarning[0m[2m[1m(replica): [0m0n: client_table_entry_create: clients=[33m[1mwarning[0m[2m[1m(replica): [0m2n: client_table_entry_create: clients=32/32 evicting client=58707516419434805650485306150752767408
+32/32 evicting client=58707516419434805650485306150752767408
+[33m[1mwarning[0m[2m[1m(replica): [0m1N: client_table_entry_create: clients=32/32 evicting client=100276492142052577164302445695150125824
+[33m[1mwarning[0m[2m[1m(replica): [0m2n: client_table_entry_create: clients=32/32 evicting client=100276492142052577164302445695150125824
+[33m[1mwarning[0m[2m[1m(replica): [0m0n: client_table_entry_create: clients=32/32 evicting client=100276492142052577164302445695150125824
+[33m[1mwarning[0m[2m[1m(replica): [0m1N: client_table_entry_create: clients=32/32 evicting client=150816533162115010046300479638046532494
+[33m[1mwarning[0m[2m[1m(replica): [0m0n: client_table_entry_create: clients=32/32 evicting client=150816533162115010046300479638046532494
+[33m[1mwarning[0m[2m[1m(replica): [0m2n: client_table_entry_create: clients=32/32 evicting client=150816533162115010046300479638046532494
+[33m[1mwarning[0m[2m[1m(replica): [0m1N: client_table_entry_create: clients=32/32 evicting client=188078799323782005549467330803753134499
+[33m[1mwarning[0m[2m[1m(replica): [0m0n: client_table_entry_create: clients=32/32 evicting client=188078799323782005549467330803753134499
+[33m[1mwarning[0m[2m[1m(replica): [0m2n: client_table_entry_create: clients=32/32 evicting client=188078799323782005549467330803753134499
+[33m[1mwarning[0m[2m[1m(replica): [0m1N: client_table_entry_create: clients=32/32 evicting client=218774466901401023763379031258767020371
+[33m[1mwarning[0m[2m[1m(replica): [0m0n: client_table_entry_create: clients=32/32 evicting client=218774466901401023763379031258767020371
+[33m[1mwarning[0m[2m[1m(replica): [0m2n: client_table_entry_create: clients=32/32 evicting client=218774466901401023763379031258767020371
+[33m[1mwarning[0m[2m[1m(replica): [0m1N: client_table_entry_create: clients=32/32 evicting client=96278196393021528589894379626446492355
+[33m[1mwarning[0m[2m[1m(replica): [0m0n: client_table_entry_create: clients=32/32 evicting client=96278196393021528589894379626446492355
+[33m[1mwarning[0m[2m[1m(replica): [0m2n: client_table_entry_create: clients=32/32 evicting client=96278196393021528589894379626446492355
+[33m[1mwarning[0m[2m[1m(replica): [0m1N: client_table_entry_create: clients=32/32 evicting client=2960213498959205837401739786704670393
+[33m[1mwarning[0m[2m[1m(replica): [0m0n: client_table_entry_create: clients=32/32 evicting client=2960213498959205837401739786704670393
+[33m[1mwarning[0m[2m[1m(replica): [0m2n: client_table_entry_create: clients=32/32 evicting client=2960213498959205837401739786704670393
+NATIVE: 1,216,000 payload bytes written through the paged VFS
+NATIVE: primary killed
+[33m[1mwarning[0m[2m[1m(replica): [0m1N: client_table_entry_create: clients=32/32 evicting client=206182284967667449276305964576950355746
+[33m[1mwarning[0m[2m[1m(replica): [0m2n: client_table_entry_create: clients=32/32 evicting client=206182284967667449276305964576950355746
+NATIVE: all replicas killed; recovering durable SQL pages
+SQLhevi replica=1 cluster=0 listening; io_uring storage
+SQLhevi replica=2 cluster=0 listening; io_uring storage
+[33m[1mwarning[0m[2m[1m(replica): [0m2V: client_table_entry_create: clients=32/32 evicting client=108790540683820855148052917105597497850
+[33m[1mwarning[0m[2m[1m(replica): [0m2V: client_table_entry_create: clients=32/32 evicting client=16683729265592334474571533820138947669
+[33m[1mwarning[0m[2m[1m(replica): [0m2V: client_table_entry_create: clients=32/32 evicting client=22845727981840341581891075153748049119
+SQLhevi replica=0 cluster=0 listening; io_uring storage
+[33m[1mwarning[0m[2m[1m(replica): [0m1n: client_table_entry_create: clients=32/32 evicting client=108790540683820855148052917105597497850
+[33m[1mwarning[0m[2m[1m(replica): [0m2V: client_table_entry_create: clients=32/32 evicting client=31970222076902127360009471007809371811
+[33m[1mwarning[0m[2m[1m(replica): [0m2V: client_table_entry_create: clients=32/32 evicting client=56693967869555208944376567890124706410
+[33m[1mwarning[0m[2m[1m(replica): [0m1n: client_table_entry_create: clients=32/32 evicting client=16683729265592334474571533820138947669
+[33m[1mwarning[0m[2m[1m(replica): [0m2V: client_table_entry_create: clients=32/32 evicting client=137540600761682343322055630332041743302
+[33m[1mwarning[0m[2m[1m(replica): [0m1n: client_table_entry_create: clients=32/32 evicting client=22845727981840341581891075153748049119
+[33m[1mwarning[0m[2m[1m(replica): [0m1n: client_table_entry_create: clients=32/32 evicting client=31970222076902127360009471007809371811
+[33m[1mwarning[0m[2m[1m(replica): [0m2V: client_table_entry_create: clients=32/32 evicting client=66066115073092046025595295534218455005
+[33m[1mwarning[0m[2m[1m(replica): [0m1n: client_table_entry_create: clients=32/32 evicting client=56693967869555208944376567890124706410
+[33m[1mwarning[0m[2m[1m(replica): [0m2V: client_table_entry_create: clients=32/32 evicting client=261145062330680810651616310094359423785
+[33m[1mwarning[0m[2m[1m(replica): [0m1n: client_table_entry_create: clients=32/32 evicting client=137540600761682343322055630332041743302
+[33m[1mwarning[0m[2m[1m(replica): [0m1n: client_table_entry_create: clients=32/32 evicting client=66066115073092046025595295534218455005
+[33m[1mwarning[0m[2m[1m(replica): [0m2V: client_table_entry_create: clients=32/32 evicting client=178412470055551765422368582752638954689
+[33m[1mwarning[0m[2m[1m(replica): [0m1n: client_table_entry_create: clients=32/32 evicting client=261145062330680810651616310094359423785
+[33m[1mwarning[0m[2m[1m(replica): [0m2V: client_table_entry_create: clients=32/32 evicting client=139416107285538454444264247428043691499
+[33m[1mwarning[0m[2m[1m(replica): [0m0n: client_table_entry_create: clients=32/32 evicting client=108790540683820855148052917105597497850
+[33m[1mwarning[0m[2m[1m(replica): [0m2V: client_table_entry_create: clients=32/32 evicting client=187478675355929279782103899893592060004
+[33m[1mwarning[0m[2m[1m(replica): [0m1n: client_table_entry_create: clients=32/32 evicting client=178412470055551765422368582752638954689
+[33m[1mwarning[0m[2m[1m(replica): [0m0n: client_table_entry_create: clients=32/32 evicting client=16683729265592334474571533820138947669
+[33m[1mwarning[0m[2m[1m(replica): [0m2V: client_table_entry_create: clients=32/32 evicting client=58707516419434805650485306150752767408
+[33m[1mwarning[0m[2m[1m(replica): [0m0n: client_table_entry_create: clients=32/32 evicting client=22845727981840341581891075153748049119
+[33m[1mwarning[0m[2m[1m(replica): [0m1n: client_table_entry_create: clients=32/32 evicting client=139416107285538454444264247428043691499
+[33m[1mwarning[0m[2m[1m(replica): [0m2V: client_table_entry_create: clients=32/32 evicting client=100276492142052577164302445695150125824
+[33m[1mwarning[0m[2m[1m(replica): [0m1n: client_table_entry_create: clients=32/32 evicting client=187478675355929279782103899893592060004
+[33m[1mwarning[0m[2m[1m(replica): [0m0n: client_table_entry_create: clients=32/32 evicting client=31970222076902127360009471007809371811
+[33m[1mwarning[0m[2m[1m(replica): [0m2V: client_table_entry_create: clients=32/32 evicting client=150816533162115010046300479638046532494
+[33m[1mwarning[0m[2m[1m(replica): [0m1n: client_table_entry_create: clients=32/32 evicting client=58707516419434805650485306150752767408
+[33m[1mwarning[0m[2m[1m(replica): [0m2V: client_table_entry_create: clients=32/32 evicting client=188078799323782005549467330803753134499
+[33m[1mwarning[0m[2m[1m(replica): [0m0n: client_table_entry_create: clients=32/32 evicting client=56693967869555208944376567890124706410
+[33m[1mwarning[0m[2m[1m(replica): [0m1n: client_table_entry_create: clients=32/32 evicting client=100276492142052577164302445695150125824
+[33m[1mwarning[0m[2m[1m(replica): [0m0n: client_table_entry_create: clients=32/32 evicting client=137540600761682343322055630332041743302
+[33m[1mwarning[0m[2m[1m(replica): [0m2V: client_table_entry_create: clients=32/32 evicting client=218774466901401023763379031258767020371
+[33m[1mwarning[0m[2m[1m(replica): [0m1n: client_table_entry_create: clients=32/32 evicting client=150816533162115010046300479638046532494
+[33m[1mwarning[0m[2m[1m(replica): [0m2V: client_table_entry_create: clients=32/32 evicting client=96278196393021528589894379626446492355
+[33m[1mwarning[0m[2m[1m(replica): [0m0n: client_table_entry_create: clients=32/32 evicting client=66066115073092046025595295534218455005
+[33m[1mwarning[0m[2m[1m(replica): [0m2V: client_table_entry_create: clients=32/32 evicting client=2960213498959205837401739786704670393
+[33m[1mwarning[0m[2m[1m(replica): [0m1n: client_table_entry_create: clients=32/32 evicting client=188078799323782005549467330803753134499
+[33m[1mwarning[0m[2m[1m(replica): [0m0n: client_table_entry_create: clients=32/32 evicting client=261145062330680810651616310094359423785
+[33m[1mwarning[0m[2m[1m(replica): [0m2V: client_table_entry_create: clients=32/32 evicting client=206182284967667449276305964576950355746
+[33m[1mwarning[0m[2m[1m(replica): [0m0n: client_table_entry_create: clients=32/32 evicting client=178412470055551765422368582752638954689
+[33m[1mwarning[0m[2m[1m(replica): [0m1n: client_table_entry_create: clients=32/32 evicting client=218774466901401023763379031258767020371
+[33m[1mwarning[0m[2m[1m(replica): [0m0n: client_table_entry_create: clients=32/32 evicting client=139416107285538454444264247428043691499
+[33m[1mwarning[0m[2m[1m(replica): [0m0n: client_table_entry_create: clients=32/32 evicting client=187478675355929279782103899893592060004
+[33m[1mwarning[0m[2m[1m(replica): [0m1n: client_table_entry_create: clients=32/32 evicting client=96278196393021528589894379626446492355
+[33m[1mwarning[0m[2m[1m(replica): [0m1n: client_table_entry_create: clients=32/32 evicting client=2960213498959205837401739786704670393
+[33m[1mwarning[0m[2m[1m(replica): [0m0n: client_table_entry_create: clients=32/32 evicting client=58707516419434805650485306150752767408
+[33m[1mwarning[0m[2m[1m(replica): [0m1n: client_table_entry_create: clients=32/32 evicting client=206182284967667449276305964576950355746
+[33m[1mwarning[0m[2m[1m(replica): [0m0n: client_table_entry_create: clients=32/32 evicting client=100276492142052577164302445695150125824
+[33m[1mwarning[0m[2m[1m(replica): [0m0n: client_table_entry_create: clients=32/32 evicting client=150816533162115010046300479638046532494
+[33m[1mwarning[0m[2m[1m(replica): [0m0n: client_table_entry_create: clients=32/32 evicting client=188078799323782005549467330803753134499
+[33m[1mwarning[0m[2m[1m(replica): [0m0n: client_table_entry_create: clients=32/32 evicting client=218774466901401023763379031258767020371
+[33m[1mwarning[0m[2m[1m(replica): [0m1n: on_prepare: not replicating op=158 commit_min=157 present=true
+[33m[1mwarning[0m[2m[1m(replica): [0m2N: client_table_entry_create: clients=32/32 evicting client=151231074638393037777384656455238641037
+[33m[1mwarning[0m[2m[1m(replica): [0m1n: client_table_entry_create: clients=32/32 evicting client=151231074638393037777384656455238641037
+[33m[1mwarning[0m[2m[1m(replica): [0m0n: client_table_entry_create: clients=32/32 evicting client=96278196393021528589894379626446492355
+[33m[1mwarning[0m[2m[1m(replica): [0m0n: client_table_entry_create: clients=32/32 evicting client=2960213498959205837401739786704670393
+[33m[1mwarning[0m[2m[1m(replica): [0m0n: client_table_entry_create: clients=32/32 evicting client=206182284967667449276305964576950355746
+[33m[1mwarning[0m[2m[1m(replica): [0m2N: client_table_entry_create: clients=32/32 evicting client=334827292509928092117346437904893888970
+[33m[1mwarning[0m[2m[1m(replica): [0m1n: client_table_entry_create: clients=32/32 evicting client=334827292509928092117346437904893888970
+NATIVE PASS: static binary, ext4/io_uring, TCP, failover, restart
+[  102.076411] reboot: Power down

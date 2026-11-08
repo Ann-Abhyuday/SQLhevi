@@ -1,0 +1,64 @@
+Cobra TigerStyle: 33 files, 544 assertions, 247 functions; positive and negative checks passed
+storage_limit=1125899906842624 logical_sqlite_limit=281474976579584 manifest_nodes=1348206 manifest_node_bytes=22089007104
+Additional startup memory is required for maps, free sets, caches and SQLite.
+Build Summary: 28/28 steps succeeded; 19/19 tests passed
+check success
++- run test 19 pass (19 total) 2s MaxRSS:113M
+|  +- compile test ReleaseSafe x86_64-linux-musl cached 5ms MaxRSS:40M
+|     +- WriteFile cached
+|     +- compile lib sqlite3 ReleaseSafe x86_64-linux-musl cached 3ms MaxRSS:37M
+|     +- compile lib sqlite3 ReleaseSafe x86_64-linux-musl (reused)
+|     +- options cached
++- zig fmt --check success
++- run exe tigerstyle success 58ms
+|  +- compile exe tigerstyle ReleaseSafe x86_64-linux-musl cached 6ms MaxRSS:41M
++- run exe SQLhevi success 1ms
+   +- compile exe SQLhevi ReleaseSafe x86_64-linux-musl cached 7ms MaxRSS:42M
+      +- WriteFile (reused)
+      +- compile lib sqlite3 ReleaseSafe x86_64-linux-musl (reused)
+      +- compile lib sqlite3 ReleaseSafe x86_64-linux-musl (reused)
+      +- options (reused)
+      +- options cached
+      +- options cached
+install cached
++- install SQLhevi cached
+|  +- compile exe SQLhevi ReleaseSafe x86_64-linux-musl (+6 more reused dependencies)
++- install SQLhevi-sim cached
+|  +- compile exe SQLhevi-sim ReleaseSafe x86_64-linux-musl cached 7ms MaxRSS:42M
+|     +- WriteFile (reused)
+|     +- compile lib sqlite3 ReleaseSafe x86_64-linux-musl (reused)
+|     +- compile lib sqlite3 ReleaseSafe x86_64-linux-musl (reused)
+|     +- options (reused)
+|     +- options (reused)
+|     +- options (reused)
++- install SQLhevi-test-cluster cached
+   +- compile exe SQLhevi-test-cluster ReleaseSafe x86_64-linux-musl cached 6ms MaxRSS:40M
+      +- WriteFile (reused)
+      +- compile lib sqlite3 ReleaseSafe x86_64-linux-musl (reused)
+      +- compile lib sqlite3 ReleaseSafe x86_64-linux-musl (reused)
+      +- options (reused)
+      +- options (reused)
+      +- options (reused)
+benchmarks success
++- install SQLhevi-bench-sqlite cached
+|  +- compile exe SQLhevi-bench-sqlite ReleaseSafe x86_64-linux-musl cached 7ms MaxRSS:41M
+|     +- WriteFile cached
+|     +- compile lib sqlite3-benchmark ReleaseSafe x86_64-linux-musl cached 7ms MaxRSS:40M
+|     +- compile lib sqlite3-benchmark ReleaseSafe x86_64-linux-musl (reused)
++- install SQLhevi-bench-engine success
+|  +- compile exe SQLhevi-bench-engine ReleaseSafe x86_64-linux-musl success 12s MaxRSS:557M
+|     +- WriteFile (reused)
+|     +- compile lib sqlite3 ReleaseSafe x86_64-linux-musl (reused)
+|     +- compile lib sqlite3 ReleaseSafe x86_64-linux-musl (reused)
+|     +- options (reused)
+|     +- options (reused)
+|     +- options (reused)
++- install SQLhevi-bench-cluster success
+   +- compile exe SQLhevi-bench-cluster ReleaseSafe x86_64-linux-musl success 15s MaxRSS:554M
+      +- WriteFile (reused)
+      +- compile lib sqlite3 ReleaseSafe x86_64-linux-musl (reused)
+      +- compile lib sqlite3 ReleaseSafe x86_64-linux-musl (reused)
+      +- options (reused)
+      +- options (reused)
+      +- options (reused)
+

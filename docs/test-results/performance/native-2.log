@@ -1,0 +1,100 @@
+GUEST: loading /lib/virtio_blk.ko
+GUEST: loading /lib/crc16.ko
+GUEST: loading /lib/mbcache.ko
+GUEST: loading /lib/jbd2.ko
+GUEST: loading /lib/ext4.ko
+GUEST: ext4 mounted; loopback ready; running native io_uring tests
+SQLite 3.55.0; source=2026-11-07 21:02:37 eb48769d49ea6e2b766aef0c429fd35c2786969ee94d531a69dc498b849129c8; allocator=system; path=/data/sqlite-memory.db; temp=memory
+COLUMNS,backend,case,n,ok,oom,total_ns,p50_ns,p95_ns,sqlite_peak_bytes,allocation_failures,execution_attempts,temp_spill_bytes
+RESULT,sqlite_system_memory_wal_full,point_read,16,16,0,2074089,67150,915779,1501736,0,0,0
+RESULT,sqlite_system_memory_wal_full,point_write,8,8,0,108223764,13605524,17263213,1501736,0,0,0
+RESULT,sqlite_system_memory_wal_full,batch_write_256,2,2,0,52413126,16093051,36320075,1706096,0,0,0
+RESULT,sqlite_system_memory_wal_full,scan_4096,2,2,0,11377014,4081379,7295635,1567544,0,0,0
+RESULT,sqlite_system_memory_wal_full,eight_way_join,2,2,0,51185201,23618391,27566810,1574536,0,0,0
+RESULT,sqlite_system_memory_wal_full,materialized_join_4MiB,2,2,0,190877142,65716772,125160370,7577368,0,0,0
+RESULT,sqlite_system_memory_wal_full,materialized_join_8MiB,2,2,0,290095618,141601239,148494379,13569176,0,0,0
+RESULT,sqlite_system_memory_wal_full,materialized_join_16MiB,2,2,0,511998365,206091047,305907318,25557160,0,0,0
+RESULT,sqlite_system_memory_wal_full,materialized_join_20MiB,2,2,0,575634582,229476120,346158462,31536952,0,0,0
+RESULT,sqlite_system_memory_wal_full,materialized_join_24MiB,2,2,0,565270826,258103151,307167675,37582280,0,0,0
+RESULT,sqlite_system_memory_wal_full,materialized_join_32MiB,2,2,0,742541067,341217565,401323502,49537496,0,0,0
+RESULT,sqlite_system_memory_wal_full,materialized_join_64MiB,2,2,0,1408078361,507864140,900214221,97498168,0,0,0
+RESULT,sqlite_system_memory_wal_full,materialized_join_96MiB,2,2,0,1846505622,785899359,1060606263,145594280,0,0,0
+RESULT,sqlite_system_memory_wal_full,materialized_join_128MiB,2,2,0,2026988964,884515482,1142473482,193419512,0,0,0
+RESULT,sqlite_system_memory_wal_full,post_pressure_read,16,16,0,2758164,63255,986015,1567544,0,0,0
+RESULT,sqlite_system_memory_wal_full,post_pressure_write,8,8,0,115764453,13129811,18767944,1567544,0,0,0
+BENCH PASS sqlite_system_memory_wal_full maxrss_kib=355412
+SQLite 3.55.0; source=2026-11-07 21:02:37 eb48769d49ea6e2b766aef0c429fd35c2786969ee94d531a69dc498b849129c8; allocator=system; path=/data/sqlite-file.db; temp=file
+COLUMNS,backend,case,n,ok,oom,total_ns,p50_ns,p95_ns,sqlite_peak_bytes,allocation_failures,execution_attempts,temp_spill_bytes
+RESULT,sqlite_system_file_wal_full,point_read,16,16,0,1783247,78362,419980,1501728,0,0,0
+RESULT,sqlite_system_file_wal_full,point_write,8,8,0,102577013,11228057,16503321,1501728,0,0,0
+RESULT,sqlite_system_file_wal_full,batch_write_256,2,2,0,35412463,12982035,22430428,1706088,0,0,0
+RESULT,sqlite_system_file_wal_full,scan_4096,2,2,0,8508112,4178838,4329274,1567536,0,0,0
+RESULT,sqlite_system_file_wal_full,eight_way_join,2,2,0,44802691,21717639,23085052,1574528,0,0,0
+RESULT,sqlite_system_file_wal_full,materialized_join_4MiB,2,2,0,204585077,88116202,116468875,3707400,0,0,7675904
+RESULT,sqlite_system_file_wal_full,materialized_join_8MiB,2,2,0,322743266,160588635,162154631,3709960,0,0,18890752
+RESULT,sqlite_system_file_wal_full,materialized_join_16MiB,2,2,0,682240015,291763992,390476023,3709960,0,0,41312256
+RESULT,sqlite_system_file_wal_full,materialized_join_20MiB,2,2,0,698827230,309369979,389457251,3709960,0,0,52527104
+RESULT,sqlite_system_file_wal_full,materialized_join_24MiB,2,2,0,831811610,410281234,421530376,3709960,0,0,63741952
+RESULT,sqlite_system_file_wal_full,materialized_join_32MiB,2,2,0,1070777168,534960443,535816725,3709960,0,0,86163456
+RESULT,sqlite_system_file_wal_full,materialized_join_64MiB,2,2,0,2080619029,1020051613,1060567416,3709960,0,0,175865856
+RESULT,sqlite_system_file_wal_full,materialized_join_96MiB,2,2,0,3167479245,1571627042,1595852203,3709960,0,0,265576448
+RESULT,sqlite_system_file_wal_full,materialized_join_128MiB,2,2,0,3863120656,1848052206,2015068450,3709960,0,0,355270656
+RESULT,sqlite_system_file_wal_full,post_pressure_read,16,16,0,988337,56813,130676,1567536,0,0,0
+RESULT,sqlite_system_file_wal_full,post_pressure_write,8,8,0,75871480,9349003,11239052,1567536,0,0,0
+BENCH PASS sqlite_system_file_wal_full maxrss_kib=7424
+formatted /data/0.SQLhevi: cluster=0 replica=0/3
+formatted /data/1.SQLhevi: cluster=0 replica=1/3
+formatted /data/2.SQLhevi: cluster=0 replica=2/3
+[33m[1mwarning[0m[2m[1m(message_bus): [0m188684409338092927690050459921121816062: on_connect: error to=2 error.ConnectionRefused
+[33m[1mwarning[0m[2m[1m(message_bus): [0m188684409338092927690050459921121816062: on_connect: error to=0 error.ConnectionRefused
+[33m[1mwarning[0m[2m[1m(message_bus): [0m188684409338092927690050459921121816062: on_connect: error to=1 error.ConnectionRefused
+[33m[1mwarning[0m[2m[1m(message_bus): [0m188684409338092927690050459921121816062: on_connect: error to=1 error.ConnectionRefused
+[33m[1mwarning[0m[2m[1m(message_bus): [0m188684409338092927690050459921121816062: on_connect: error to=2 error.ConnectionRefused
+[33m[1mwarning[0m[2m[1m(message_bus): [0m188684409338092927690050459921121816062: on_connect: error to=0 error.ConnectionRefused
+[33m[1mwarning[0m[2m[1m(message_bus): [0m188684409338092927690050459921121816062: on_connect: error to=2 error.ConnectionRefused
+[33m[1mwarning[0m[2m[1m(message_bus): [0m188684409338092927690050459921121816062: on_connect: error to=1 error.ConnectionRefused
+[33m[1mwarning[0m[2m[1m(message_bus): [0m188684409338092927690050459921121816062: on_connect: error to=0 error.ConnectionRefused
+[33m[1mwarning[0m[2m[1m(message_bus): [0m188684409338092927690050459921121816062: on_connect: error to=0 error.ConnectionRefused
+[33m[1mwarning[0m[2m[1m(message_bus): [0m188684409338092927690050459921121816062: on_connect: error to=1 error.ConnectionRefused
+[33m[1mwarning[0m[2m[1m(message_bus): [0m188684409338092927690050459921121816062: on_connect: error to=2 error.ConnectionRefused
+[33m[1mwarning[0m[2m[1m(message_bus): [0m188684409338092927690050459921121816062: on_connect: error to=1 error.ConnectionRefused
+[33m[1mwarning[0m[2m[1m(message_bus): [0m188684409338092927690050459921121816062: on_connect: error to=2 error.ConnectionRefused
+[33m[1mwarning[0m[2m[1m(message_bus): [0m188684409338092927690050459921121816062: on_connect: error to=0 error.ConnectionRefused
+[33m[1mwarning[0m[2m[1m(message_bus): [0m188684409338092927690050459921121816062: on_connect: error to=2 error.ConnectionRefused
+[33m[1mwarning[0m[2m[1m(message_bus): [0m188684409338092927690050459921121816062: on_connect: error to=1 error.ConnectionRefused
+[33m[1mwarning[0m[2m[1m(message_bus): [0m188684409338092927690050459921121816062: on_connect: error to=0 error.ConnectionRefused
+[33m[1mwarning[0m[2m[1m(message_bus): [0m188684409338092927690050459921121816062: on_connect: error to=1 error.ConnectionRefused
+[33m[1mwarning[0m[2m[1m(message_bus): [0m188684409338092927690050459921121816062: on_connect: error to=2 error.ConnectionRefused
+[33m[1mwarning[0m[2m[1m(message_bus): [0m188684409338092927690050459921121816062: on_connect: error to=1 error.ConnectionRefused
+[33m[1mwarning[0m[2m[1m(message_bus): [0m188684409338092927690050459921121816062: on_connect: error to=1 error.ConnectionRefused
+SQLhevi replica=2 cluster=0 listening; io_uring storage
+SQLhevi replica=0 cluster=0 listening; io_uring storage
+SQLhevi replica=1 cluster=0 listening; io_uring storage
+[33m[1mwarning[0m[2m[1m(replica): [0m1N: on_request: dropping (clock not synchronized)
+[33m[1mwarning[0m[2m[1m(replica): [0m1N: on_request: dropping (clock not synchronized)
+COLUMNS,backend,case,n,ok,oom,total_ns,p50_ns,p95_ns,sqlite_peak_bytes,allocation_failures,execution_attempts,temp_spill_bytes
+RESULT,SQLhevi_cluster_64,point_read,16,16,0,444344473,30791442,42497206,0,0,0,0
+RESULT,SQLhevi_cluster_64,point_write,8,8,0,239957265,30919191,41423792,0,0,0,0
+RESULT,SQLhevi_cluster_64,batch_write_256,2,2,0,93388564,41541985,51846579,0,0,0,0
+RESULT,SQLhevi_cluster_64,scan_4096,2,2,0,227787691,93074926,134712765,0,0,0,0
+RESULT,SQLhevi_cluster_64,eight_way_join,2,2,0,542641757,219210219,323431538,0,0,0,0
+RESULT,SQLhevi_cluster_64,materialized_join_4MiB,2,2,0,253568935,84253244,169315691,0,0,0,0
+RESULT,SQLhevi_cluster_64,materialized_join_8MiB,2,2,0,199123212,93989755,105133457,0,0,0,0
+RESULT,SQLhevi_cluster_64,materialized_join_16MiB,2,2,0,284864206,124068022,160796184,0,0,0,0
+RESULT,SQLhevi_cluster_64,materialized_join_20MiB,2,2,0,340233839,165853210,174380629,0,0,0,0
+RESULT,SQLhevi_cluster_64,materialized_join_24MiB,2,0,2,271115488,135203439,135912049,0,0,0,0
+RESULT,SQLhevi_cluster_64,materialized_join_32MiB,2,0,2,290482057,144865783,145616274,0,0,0,0
+RESULT,SQLhevi_cluster_64,materialized_join_64MiB,2,0,2,291453309,144969556,146483753,0,0,0,0
+RESULT,SQLhevi_cluster_64,materialized_join_96MiB,2,0,2,356252623,167324048,188928575,0,0,0,0
+RESULT,SQLhevi_cluster_64,materialized_join_128MiB,2,0,2,374601181,187218493,187382688,0,0,0,0
+RESULT,SQLhevi_cluster_64,post_pressure_read,16,16,0,615448178,31161661,159816714,0,0,0,0
+RESULT,SQLhevi_cluster_64,post_pressure_write,8,8,0,245856411,31625808,32694474,0,0,0,0
+BENCH PASS SQLhevi_cluster_64 maxrss_kib=3612
+REPLICA_MEMORY pid=659 VmHWM:	  969512 kB
+REPLICA_MEMORY pid=659 VmRSS:	  969512 kB
+REPLICA_MEMORY pid=660 VmHWM:	  969516 kB
+REPLICA_MEMORY pid=660 VmRSS:	  969516 kB
+REPLICA_MEMORY pid=661 VmHWM:	  969512 kB
+REPLICA_MEMORY pid=661 VmRSS:	  969512 kB
+CLUSTER BENCH PASS: persistent session; io_uring; three replicas
+[33m[1mwarning[0m[2m[1m(message_bus): [0m2: on_recv: from=.{ .[   40.757661] reboot: Power down

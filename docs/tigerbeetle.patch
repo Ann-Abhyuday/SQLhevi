@@ -1,0 +1,88 @@
+diff --git a/src/lsm/manifest_log.zig b/src/lsm/manifest_log.zig
+index 4ede7d0..0aee794 100644
+--- a/src/lsm/manifest_log.zig
++++ b/src/lsm/manifest_log.zig
+@@ -147,7 +147,12 @@ pub fn ManifestLogType(comptime Storage: type) type {
+             manifest_log.* = .{
+                 .superblock = grid.superblock,
+                 .grid = grid,
+-                .forest_table_count_max = compaction_pace.tables_max,
++                // Every durable table needs an index block and at least one data block.
++                // Include unfinished compactions. This changes only memory reservation, not pace.
++                .forest_table_count_max = @intCast(@min(
++                    compaction_pace.tables_max,
++                    grid.superblock.storage_size_limit / (2 * constants.block_size) + 1024,
++                )),
+                 .pace = compaction_pace,
+                 .log_block_checksums = undefined,
+                 .log_block_addresses = undefined,
+@@ -233,7 +238,7 @@ pub fn ManifestLogType(comptime Storage: type) type {
+             manifest_log.* = .{
+                 .superblock = manifest_log.superblock,
+                 .grid = manifest_log.grid,
+-                .forest_table_count_max = manifest_log.pace.tables_max,
++                .forest_table_count_max = manifest_log.forest_table_count_max,
+                 .pace = manifest_log.pace,
+                 .log_block_checksums = manifest_log.log_block_checksums,
+                 .log_block_addresses = manifest_log.log_block_addresses,
+diff --git a/src/lsm/node_pool.zig b/src/lsm/node_pool.zig
+index 597e172..1910745 100644
+--- a/src/lsm/node_pool.zig
++++ b/src/lsm/node_pool.zig
+@@ -34,7 +34,7 @@ pub fn NodePoolType(comptime _node_size: u32, comptime _node_alignment: u13) typ
+                 .buffer = undefined,
+                 .free = undefined,
+             };
+-            const size = node_size * node_count;
++            const size: u64 = @as(u64, node_size) * node_count;
+             pool.buffer = try allocator.alignedAlloc(u8, .fromByteUnits(node_alignment), size);
+             errdefer allocator.free(pool.buffer);
+ 
+diff --git a/src/vsr.zig b/src/vsr.zig
+index da29f2f..4ae5355 100644
+--- a/src/vsr.zig
++++ b/src/vsr.zig
+@@ -14,6 +14,7 @@ test {
+ // Note that we don't promise any stability of these interfaces yet.
+ pub const cdc = @import("cdc/runner.zig");
+ pub const constants = @import("constants.zig");
++pub const configuration = @import("config.zig");
+ pub const message_buffer = @import("message_buffer.zig");
+ pub const message_bus = @import("message_bus.zig");
+ pub const message_pool = @import("message_pool.zig");
+diff --git a/src/vsr/replica_format.zig b/src/vsr/replica_format.zig
+index dcd74ae..fda8a3f 100644
+--- a/src/vsr/replica_format.zig
++++ b/src/vsr/replica_format.zig
+@@ -100,11 +100,12 @@ fn ReplicaFormatType(comptime Storage: type) type {
+             // header before the prepare".
+             for (0..constants.journal_slot_count) |slot| {
+                 // Direct I/O requires the buffer to be sector-aligned. Allocate a buffer for each
+-                // sector in the arena, so they can be written concurrently.
++                // slot in the arena, so they can be written concurrently. Initialize the entire
++                // slot so journal recovery never reads an unwritten sector in the simulator.
+                 const header_buffer = try arena.alignedAlloc(
+                     u8,
+                     .fromByteUnits(constants.sector_size),
+-                    constants.sector_size,
++                    constants.message_size_max,
+                 );
+                 const header: *Header.Prepare = std.mem.bytesAsValue(
+                     Header.Prepare,
+@@ -293,14 +294,8 @@ fn ReplicaFormatType(comptime Storage: type) type {
+                     // Every sector in the wal_headers zone has been written:
+                     .wal_headers => assert(self.sectors_written.isSet(sector)),
+ 
+-                    // The first sector in every constants.message_size_max has been written:
+-                    .wal_prepares => {
+-                        if ((sector_start - zone.start()) % constants.message_size_max == 0) {
+-                            assert(self.sectors_written.isSet(sector));
+-                        } else {
+-                            assert(!self.sectors_written.isSet(sector));
+-                        }
+-                    },
++                    // Every prepare slot, including its padding, has been initialized.
++                    .wal_prepares => assert(self.sectors_written.isSet(sector)),
+ 
+                     // Nothing else has been written:
+                     else => assert(!self.sectors_written.isSet(sector)),

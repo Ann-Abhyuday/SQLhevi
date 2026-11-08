@@ -1,0 +1,4 @@
+progress seed=1 requests=100 ticks=2337
+progress seed=1 requests=200 ticks=4064
+progress seed=1 requests=300 ticks=5794
+PASS seed=1 requests=300 replies=304 ticks=7414 digest=bc6862111a81fa54c6db48ab172031c5 view=3 checkpoint=231 faulty_sectors_max=10

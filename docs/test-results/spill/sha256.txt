@@ -1,0 +1,9 @@
+c10c0a3df44c43f445387e465dd880c10cf6ee0ba47e416f7f48116ea757b55e  .tooling/sqlite/sqlite3.c
+7edd3751a1948786cc24b83ec17b73cb599676120fd0863dbf12bd944de68393  .tooling/sqlite/sqlite3.h
+6e336a2d62250d55fd7ba4d7e6bdf07d4ce3407824dd523631d0d8862ae9011e  .tooling/spill-guest/SQLhevi-fault-test
+405ebf3a84092991282f88cf9859a3b57bf20a6ac37e787fbaf755cb753b27db  .tooling/spill-guest/init
+2125a8f06479594a2416c2f1975f55c705ed3cf380f5d759df4fdcdca9ce411c  .tooling/spill64-guest/SQLhevi-fault-test
+405ebf3a84092991282f88cf9859a3b57bf20a6ac37e787fbaf755cb753b27db  .tooling/spill64-guest/init
+3785b2256a8c3b9a959b0fe68ca70c8933a5d485c8b5cbe1fe7fbeb86237b1a7  zig-out/bin/SQLhevi
+f24f22ec31456f76a3ec8fde20c3dc89ef78c97c22450bd573f42c62f47d54b2  zig-out/bin/SQLhevi-sim
+f839389bc50adbd1e27b9a50d90ad6b8e43946b387ed6b69c8c1aa273f41036b  .tooling/spill-limit-max/bin/SQLhevi

@@ -1,0 +1,38 @@
+Cobra TigerStyle: 17 files, 304 assertions, 137 functions; positive and negative checks passed
+storage_limit=1125899906842624 logical_sqlite_limit=281474976579584 manifest_nodes=1348206 manifest_node_bytes=22089007104
+Additional startup memory is required for maps, free sets, caches and SQLite.
+Build Summary: 18/18 steps succeeded; 12/12 tests passed
+install success
++- install SQLhevi success
+|  +- compile exe SQLhevi ReleaseSafe x86_64-linux-musl success 27s MaxRSS:934M
+|     +- WriteFile cached
+|     +- compile lib sqlite3 ReleaseSafe x86_64-linux-musl cached 1ms MaxRSS:40M
+|     +- compile lib sqlite3 ReleaseSafe x86_64-linux-musl (reused)
+|     +- options cached
+|     +- options cached
++- install SQLhevi-sim success
+|  +- compile exe SQLhevi-sim ReleaseSafe x86_64-linux-musl success 25s MaxRSS:901M
+|     +- WriteFile (reused)
+|     +- compile lib sqlite3 ReleaseSafe x86_64-linux-musl (reused)
+|     +- compile lib sqlite3 ReleaseSafe x86_64-linux-musl (reused)
+|     +- options (reused)
+|     +- options (reused)
++- install SQLhevi-test-cluster success
+   +- compile exe SQLhevi-test-cluster ReleaseSafe x86_64-linux-musl success 10s MaxRSS:503M
+      +- WriteFile (reused)
+      +- compile lib sqlite3 ReleaseSafe x86_64-linux-musl (reused)
+      +- compile lib sqlite3 ReleaseSafe x86_64-linux-musl (reused)
+      +- options (reused)
+      +- options (reused)
+check success
++- run test 12 pass (12 total) 1s MaxRSS:102M
+|  +- compile test ReleaseSafe x86_64-linux-musl success 12s MaxRSS:500M
+|     +- WriteFile (reused)
+|     +- compile lib sqlite3 ReleaseSafe x86_64-linux-musl (reused)
+|     +- compile lib sqlite3 ReleaseSafe x86_64-linux-musl (reused)
++- zig fmt --check success
++- run exe tigerstyle success 34ms
+|  +- compile exe tigerstyle ReleaseSafe x86_64-linux-musl success 12s MaxRSS:515M
++- run exe SQLhevi success 3ms
+   +- compile exe SQLhevi ReleaseSafe x86_64-linux-musl (+5 more reused dependencies)
+

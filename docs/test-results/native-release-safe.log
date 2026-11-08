@@ -1,0 +1,4 @@
+NATIVE: 1,216,000 payload bytes written through the paged VFS
+NATIVE: primary killed
+NATIVE: all replicas killed; recovering durable SQL pages
+NATIVE PASS: static binary, ext4/io_uring, TCP, failover, restart

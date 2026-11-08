@@ -1,0 +1,8 @@
+.tooling/
+zig-out/
+.zig-cache/
+dependencies/
+data/
+core
+core.*
+*.SQLhevi

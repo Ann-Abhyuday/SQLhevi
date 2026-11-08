@@ -1,0 +1,34 @@
+Build Summary: 15/15 steps succeeded; 19/19 tests passed
+test success
++- run test 19 pass (19 total) 2s MaxRSS:121M
+   +- compile test ReleaseSafe x86_64-linux-musl success 19s MaxRSS:551M
+      +- WriteFile cached
+      +- compile lib sqlite3 ReleaseSafe x86_64-linux-musl cached 3ms MaxRSS:39M
+      +- compile lib sqlite3 ReleaseSafe x86_64-linux-musl (reused)
+      +- options cached
+install success
++- install SQLhevi success
+|  +- compile exe SQLhevi ReleaseSafe x86_64-linux-musl success 35s MaxRSS:940M
+|     +- WriteFile (reused)
+|     +- compile lib sqlite3 ReleaseSafe x86_64-linux-musl (reused)
+|     +- compile lib sqlite3 ReleaseSafe x86_64-linux-musl (reused)
+|     +- options (reused)
+|     +- options cached
+|     +- options cached
++- install SQLhevi-sim success
+|  +- compile exe SQLhevi-sim ReleaseSafe x86_64-linux-musl success 34s MaxRSS:934M
+|     +- WriteFile (reused)
+|     +- compile lib sqlite3 ReleaseSafe x86_64-linux-musl (reused)
+|     +- compile lib sqlite3 ReleaseSafe x86_64-linux-musl (reused)
+|     +- options (reused)
+|     +- options (reused)
+|     +- options (reused)
++- install SQLhevi-test-cluster success
+   +- compile exe SQLhevi-test-cluster ReleaseSafe x86_64-linux-musl success 18s MaxRSS:507M
+      +- WriteFile (reused)
+      +- compile lib sqlite3 ReleaseSafe x86_64-linux-musl (reused)
+      +- compile lib sqlite3 ReleaseSafe x86_64-linux-musl (reused)
+      +- options (reused)
+      +- options (reused)
+      +- options (reused)
+

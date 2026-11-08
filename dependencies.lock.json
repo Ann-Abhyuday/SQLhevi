@@ -1,0 +1,29 @@
+{
+  "tigerbeetle": {
+    "url": "https://github.com/tigerbeetle/tigerbeetle.git",
+    "commit": "68958eb757747d0fc96a79d1f9c2fa6766b67b48",
+    "patch": "docs/tigerbeetle.patch"
+  },
+  "sqlite": {
+    "url": "https://github.com/sqlite/sqlite.git",
+    "commit": "85814474e5c49fdb706d98410696e3efc162b978",
+    "fossil": "eb48769d49ea6e2b766aef0c429fd35c2786969ee94d531a69dc498b849129c8",
+    "version": "3.55.0 development snapshot",
+    "source_modifications": false
+  },
+  "cobra": {
+    "url": "https://github.com/nimble-code/Cobra.git",
+    "commit": "ce7d8c6a39c7c3917df9acc8cf6a59c3c685c2f5",
+    "role": "development-only static analysis"
+  },
+  "zig": {
+    "version": "0.16.0",
+    "url": "https://ziglang.org/download/0.16.0/zig-x86_64-linux-0.16.0.tar.xz",
+    "sha256": "70e49664a74374b48b51e6f3fdfbf437f6395d42509050588bd49abe52ba3d00"
+  },
+  "test_kernel": {
+    "url": "https://dl-cdn.alpinelinux.org/alpine/latest-stable/main/x86_64/linux-virt-6.18.62-r0.apk",
+    "sha256": "e121b547d9b86194a641718b52ae1c3e605085c59f31525b1649a59b3d4db0c7",
+    "role": "optional native integration tests only"
+  }
+}

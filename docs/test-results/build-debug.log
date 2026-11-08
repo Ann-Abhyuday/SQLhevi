@@ -1,0 +1,12 @@
+Cobra TigerStyle: 12 files, 236 assertions, 114 functions; positive and negative checks passed
+Build Summary: 8/8 steps succeeded; 6/6 tests passed
+check success
++- run test 6 pass (6 total) 1s MaxRSS:29M
+|  +- compile test Debug x86_64-linux-musl success 919ms MaxRSS:274M
+|     +- WriteFile cached
+|     +- compile lib sqlite3 Debug x86_64-linux-musl cached 2ms MaxRSS:39M
+|     +- compile lib sqlite3 Debug x86_64-linux-musl (reused)
++- zig fmt --check success
++- run exe tigerstyle success 39ms
+   +- compile exe tigerstyle Debug x86_64-linux-musl success 438ms MaxRSS:158M
+

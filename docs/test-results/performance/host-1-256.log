@@ -1,0 +1,19 @@
+SQLite 3.55.0; source=2026-11-07 21:02:37 eb48769d49ea6e2b766aef0c429fd35c2786969ee94d531a69dc498b849129c8; allocator=256; path=:memory:; temp=memory
+COLUMNS,backend,case,n,ok,oom,total_ns,p50_ns,p95_ns,sqlite_peak_bytes,allocation_failures,execution_attempts,temp_spill_bytes
+RESULT,sqlite_256_memory_ram,point_read,128,128,0,309106,2117,2524,2891968,0,0,0
+RESULT,sqlite_256_memory_ram,point_write,64,64,0,413927,6367,6731,2960064,0,0,0
+RESULT,sqlite_256_memory_ram,batch_write_256,16,16,0,920894,36807,351511,3551936,0,0,0
+RESULT,sqlite_256_memory_ram,scan_4096,16,16,0,3144850,189853,235334,3023040,0,0,0
+RESULT,sqlite_256_memory_ram,eight_way_join,16,16,0,18838306,1162167,1278550,3029184,0,0,0
+RESULT,sqlite_256_memory_ram,materialized_join_4MiB,3,3,0,11975731,3616144,4931392,14344512,0,0,0
+RESULT,sqlite_256_memory_ram,materialized_join_8MiB,3,3,0,25077940,8264923,8648084,25567552,0,0,0
+RESULT,sqlite_256_memory_ram,materialized_join_16MiB,3,3,0,53352106,17180393,19772440,48021824,0,0,0
+RESULT,sqlite_256_memory_ram,materialized_join_20MiB,3,3,0,60658586,20083015,20511456,59236672,0,0,0
+RESULT,sqlite_256_memory_ram,materialized_join_24MiB,3,3,0,74212938,24589968,25062486,70517056,0,0,0
+RESULT,sqlite_256_memory_ram,materialized_join_32MiB,3,3,0,92769506,29787253,33201876,92938560,0,0,0
+RESULT,sqlite_256_memory_ram,materialized_join_64MiB,3,3,0,176935103,56231724,65648692,182772032,0,0,0
+RESULT,sqlite_256_memory_ram,materialized_join_96MiB,3,0,3,183729752,57119058,69611269,264298816,3,0,0
+RESULT,sqlite_256_memory_ram,materialized_join_128MiB,3,0,3,168885831,56285313,56751907,264298816,3,0,0
+RESULT,sqlite_256_memory_ram,post_pressure_read,128,128,0,310337,2441,2576,3023040,0,0,0
+RESULT,sqlite_256_memory_ram,post_pressure_write,64,64,0,412702,6403,7287,3091136,0,0,0
+BENCH PASS sqlite_256_memory_ram maxrss_kib=264332

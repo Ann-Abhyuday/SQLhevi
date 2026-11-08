@@ -1,0 +1,6 @@
+runc version 1.5.2
+commit: 1.5.2-1-0-g17cc947-dirty
+spec: 1.3.0
+go: go1.27.1-X:nodwarf5
+libseccomp: 2.6.0
+libpathrs: 0.2.6
